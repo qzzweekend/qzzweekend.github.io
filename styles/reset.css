@@ -227,14 +227,14 @@ a {
     top: 0;
 }
 
-.header .icon_back {
+.header .head_back {
     position: absolute;
     left: .25rem;
-    top: .5rem;
-    width: .36rem;
-    height: .31rem;
-    background: url(../images/icon_back.png) no-repeat;
-    background-size: .36rem .31rem;
+    top: .45rem;
+    width: .45rem;
+    height: .35rem;
+    background-size: 10rem 5.1rem;
+    background-position: -4.78rem -2.04rem;
 }
 
 .header h3 {
@@ -247,24 +247,6 @@ a {
     margin: 0 1.15rem;
     white-space: nowrap;
     font-size: 0.34rem;
-}
-
-.header h3 .arrowDouble,
-.header h3 .arrowSingle {
-    display: inline-block;
-    height: .34rem;
-    width: .4rem;
-    background: url(../images/ui/icon_hft.png) no-repeat;
-    background-size: 7.50rem 4.54rem;
-    background-position: -0.55rem -0.48rem;
-    position: relative;
-    left: 0;
-    top: 0.05rem;
-    margin: 0 .18rem;
-}
-
-.header h3 .arrowSingle {
-    background-position: 17.3% 11.4%;
 }
 
 .content {
@@ -289,23 +271,71 @@ a {
     background-color: #fff;
 }
 
-.footer > a {
+.footer > a.on {
     float: left;
     width: 33.3333%;
+    height: 100%;
     text-align: center;
     font-size: .26rem;
     color: #9e60ef;
 }
 
-.footer >a i{
+.footer > a {
+    float: left;
+    width: 33.3333%;
+    height: 100%;
+    text-align: center;
+    font-size: .26rem;
+    color: #999;
+}
+
+.footer > a i {
     display: block;
-    margin: .19rem auto .1rem;
-    width: .4rem;
+    margin: .25rem auto .1rem;
+    width: 0.4rem;
     height: .4rem;
-    background: url('../images/footer_home_on.png') no-repeat;
-    background-size: 18px 18px;
+    background-size: 9.26rem 5rem;
+}
+
+.footer > a.week_home i {
+    background-position: -.6rem -1.28rem;
+}
+
+.footer > a.week_home.on i {
+    background-position: 0 -1.28rem;
+}
+.footer > a.week_order i{
+    background-position: -1.98rem -1.28rem;
+}
+
+.footer > a.week_order.on i{
+    background-position: -1.28rem -1.28rem;
+}
+
+.footer > a.week_mine i{
+    background-position: -3.44rem -1.28rem;
+}
+
+.footer > a.week_mine.on i{
+    background-position: -2.66rem -1.28rem;
 }
 
 /*===============================all elements, header, site right end===============================*/
 
+.icon_week {
+    background: url('../images/icon_week.png') no-repeat;
+    background-size: 8rem 4rem;
+}
 
+.button_common {
+    margin: 0 .36rem;
+    height: .94rem;
+    line-height: .94rem;
+    background-color: #934cf4;
+    display: block;
+    border-radius: .12rem;
+    -webkit-border-radius: .12rem;
+    color: #fff;
+    font-size: .3rem;
+    text-align: center;
+}
