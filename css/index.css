@@ -35,6 +35,17 @@
     color: #a575e3;
     padding: .3rem 0;
 }
+.service_title em{
+    margin: 0 .3rem;
+}
+
+.introduce_tips{
+    display: inline-block;
+    width: .15rem;
+    height: .15rem;
+    background: url("../images/service_cross.png") no-repeat;
+    background-size: .15rem .15rem;
+}
 
 /*banner end*/
 
@@ -88,6 +99,15 @@
     width: 2.79rem;
 }
 
+.pack_praise >i{
+    display: inline-block;
+    width: .24rem;
+    height: .24rem;
+    background: url("../images/icon_praise.png") no-repeat;
+    background-size: .21rem .24rem;
+    margin-right: .15rem;
+}
+
 /*包装展示end*/
 .guest_comments {
     background-color: #fff;
@@ -106,7 +126,8 @@
 .gue_portrait {
     width: .9rem;
 }
-.gue_name_wrap{
+
+.gue_name_wrap {
     margin: .1rem 0 .2rem;
 }
 
@@ -129,13 +150,50 @@
     width: 1.82rem;
     margin-right: .1rem;
 }
-.gue_com_eximg:last-child{
+
+.gue_com_eximg:last-child {
     margin-right: 0;
 }
 
 /*服务介绍*/
-.service_int{
+.service_int {
     padding: .4rem;
     font-size: .3rem;
     line-height: .6rem;
+}
+
+/*包装美图*/
+.package_list_box {
+    margin: 0 .25rem;
+}
+
+.package_list_box > li {
+    margin-top: .2rem;
+    float: left;
+    margin-right: .18rem;
+    background-color: #fff;
+}
+
+.package_list_box > li:nth-child(even) {
+    margin-right: 0;
+}
+
+.package_list_box > li h3 {
+    margin-left: .3rem;
+    margin-bottom: .18rem;
+    font-size: .3rem;
+    color: #333;
+}
+
+.package_list_box > li .pack_praise {
+    display: block;
+    margin-left: .3rem;
+    margin-bottom: .18rem;
+    font-size: .24rem;
+    color: #666;
+}
+
+.package_img {
+    width: 3.4rem;
+    margin-bottom: .18rem;
 }
