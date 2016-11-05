@@ -304,19 +304,20 @@ a {
 .footer > a.week_home.on i {
     background-position: 0 -1.28rem;
 }
-.footer > a.week_order i{
+
+.footer > a.week_order i {
     background-position: -1.98rem -1.28rem;
 }
 
-.footer > a.week_order.on i{
+.footer > a.week_order.on i {
     background-position: -1.28rem -1.28rem;
 }
 
-.footer > a.week_mine i{
+.footer > a.week_mine i {
     background-position: -3.44rem -1.28rem;
 }
 
-.footer > a.week_mine.on i{
+.footer > a.week_mine.on i {
     background-position: -2.66rem -1.28rem;
 }
 
@@ -338,4 +339,14 @@ a {
     color: #fff;
     font-size: .3rem;
     text-align: center;
+}
+
+.week_more {
+    width: .28rem;
+    height: .28rem;
+    background-position: .06rem -2.64rem;
+    background-size: 10.68rem 5rem;
+    position: absolute;
+    top: .42rem;
+    right: .24rem;
 }

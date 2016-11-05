@@ -60,6 +60,7 @@
     height: 1.2rem;
     line-height: 1.2rem;
     padding: 0 .24rem;
+    position: relative;
 }
 
 .week_model_title {
@@ -69,6 +70,9 @@
 .week_model_more {
     color: #666;
     font-size: .26rem;
+}
+.week_model_more span{
+    margin-right: .3rem;
 }
 
 /*Ä£¿é×¨ÓÃend*/
@@ -222,6 +226,16 @@
 
 .send_name > div:first-child {
     border-bottom: 1px solid #e4e4e4;
+}
+.send_name > div:last-child {
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+}
+.send_name > div span{
+    margin-right: .3rem;
+}
+.send_name > div .week_more{
+    right: 0;
 }
 
 .send_name label {
