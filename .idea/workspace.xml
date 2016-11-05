@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dffbb64-7382-41d8-8fcc-21e291daa448" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/owl.theme.css" afterPath="$PROJECT_DIR$/styles/owl.theme.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/reset.css" afterPath="$PROJECT_DIR$/styles/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="qzzweekend.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/styles/reset.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.424581">
-              <caret line="231" column="12" selection-start-line="231" selection-start-column="12" selection-end-line="231" selection-end-column="12" />
+              <caret line="231" column="11" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -375,7 +371,7 @@
     <entry file="file://$PROJECT_DIR$/styles/reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.424581">
-          <caret line="231" column="12" selection-start-line="231" selection-start-column="12" selection-end-line="231" selection-end-column="12" />
+          <caret line="231" column="11" selection-start-line="231" selection-start-column="11" selection-end-line="231" selection-end-column="11" />
           <folding />
         </state>
       </provider>
