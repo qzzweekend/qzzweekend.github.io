@@ -1,0 +1,311 @@
+/*
+ *===============================================
+ *@desc  default style reset
+ *@author  qzz
+ *@time 2016-11-05
+ *===============================================
+ */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53";
+    background: #f0f0f0;
+    font-size: 0.28rem;
+}
+
+::scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd {
+    margin: 0;
+    font-weight: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    appearance: normal;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+    vertical-align: baseline;
+    outline: 0;
+    font-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+:focus {
+    outline: 0
+}
+
+/*
+ *==============================================
+ *@desc  responsive media query: iphones6+ 414*736 iphone6 375*667 iphone5s 320*568 iphone5 320*568
+ *@author  qzz
+ *@time 2016-11-05
+ *==============================================
+ */
+
+@media only screen and (min-width: 240px) {
+    html {
+        font-size: 266.66666666%;
+    }
+}
+
+/* 42.6666666px */
+
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 266.66666666%;
+    }
+}
+
+/* 42.6666666px */
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 300%;
+    }
+}
+
+/* 48px */
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 312.5%;
+    }
+}
+
+/* 50px */
+
+@media only screen and (min-width: 414px) {
+    html {
+        font-size: 345%;
+    }
+}
+
+/* 55.2px */
+
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 400%;
+    }
+}
+
+/* 64px */
+
+@media only screen and (min-width: 640px) {
+    html {
+        font-size: 533.3333333333%;
+    }
+}
+
+/* 85.33333px */
+
+@media only screen and (min-width: 750px) {
+    html {
+        font-size: 625%;
+    }
+}
+
+/* 1rem = 100px */
+
+/*
+ *==============================================
+ *@desc global css
+ ¡Á@author Jason
+ *@time
+ *==============================================
+ */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    overflow: hidden;
+    _height: 1%;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    zoom: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*===============================all elements, header, site right starts===============================*/
+
+.all_elements {
+    position: absolute;
+    overflow-x: hidden !important;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    font-size: .28rem;
+    color: #333;
+    -webkit-overflow-scrolling: touch;
+    /*
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+*/
+}
+
+.header {
+    height: 1.28rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: all;
+    z-index: 99;
+    background: url("../images/header_bg.png") no-repeat;
+    background-size: cover;
+}
+
+.header .header_back {
+    position: absolute;
+    height: 100%;
+    width: 1.15rem;
+    left: 0;
+    top: 0;
+}
+
+.header .icon_back {
+    position: absolute;
+    left: .25rem;
+    top: .5rem;
+    width: .36rem;
+    height: .31rem;
+    background: url(../images/icon_back.png) no-repeat;
+    background-size: .36rem .31rem;
+}
+
+.header h3 {
+    color: #fff;
+    text-align: center;
+    line-height: 1.28rem;
+    height: 1.28rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 1.15rem;
+    white-space: nowrap;
+    font-size: 0.34rem;
+}
+
+.header h3 .arrowDouble,
+.header h3 .arrowSingle {
+    display: inline-block;
+    height: .34rem;
+    width: .4rem;
+    background: url(../images/ui/icon_hft.png) no-repeat;
+    background-size: 7.50rem 4.54rem;
+    background-position: -0.55rem -0.48rem;
+    position: relative;
+    left: 0;
+    top: 0.05rem;
+    margin: 0 .18rem;
+}
+
+.header h3 .arrowSingle {
+    background-position: 17.3% 11.4%;
+}
+
+.content {
+    padding: 1.28rem 0;
+    margin-bottom: .45rem;
+    width: 100%;
+    height: auto;
+}
+
+.content.no_header {
+    padding-top: 0;
+}
+
+.footer {
+    height: 1.28rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: all;
+    z-index: 99;
+    background-color: #fff;
+}
+
+.footer > a {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    font-size: .26rem;
+    color: #9e60ef;
+}
+
+.footer >a i{
+    display: block;
+    margin: .19rem auto .1rem;
+    width: .4rem;
+    height: .4rem;
+    background: url('../images/footer_home_on.png') no-repeat;
+    background-size: 18px 18px;
+}
+
+/*===============================all elements, header, site right end===============================*/
+
+

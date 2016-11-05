@@ -1,0 +1,141 @@
+/*banner start*/
+.week_banner {
+    margin-bottom: .2rem;
+}
+
+.service_suggest {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0 .26rem;
+    margin-bottom: .2rem;
+    background-color: #fff;
+}
+
+.ser_head {
+    padding: .4rem 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.ser_head_online {
+    width: 33.3333%;
+    text-align: center;
+}
+
+.ser_img {
+    width: 60%;
+    margin: 0 auto .16rem;
+}
+
+.ser_head_online p {
+    color: #333;
+}
+
+.service_title {
+    text-align: center;
+    color: #a575e3;
+    padding: .3rem 0;
+}
+
+/*banner end*/
+
+/*模块专用start*/
+.week_model_head {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    padding: 0 .24rem;
+}
+
+.week_model_title {
+    font-size: .29rem;
+}
+
+.week_model_more {
+    color: #666;
+    font-size: .26rem;
+}
+
+/*模块专用end*/
+
+/*包装展示start*/
+.package_present {
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    background-color: #fff;
+    margin-bottom: .2rem;
+}
+
+.pack_list_wrap {
+    padding-left: .24rem;
+    overflow-x: scroll;
+}
+
+.pack_list {
+    width: 14.8rem;
+}
+
+.pack_list > li {
+    float: left;
+    margin-right: .16rem;
+    padding-bottom: .25rem;
+    font-size: .24rem;
+}
+
+.pack_list_title {
+    margin: .24rem 0 .17rem;
+}
+
+.pack_img {
+    width: 2.79rem;
+}
+
+/*包装展示end*/
+.guest_comments {
+    background-color: #fff;
+}
+
+.guest_comments_list {
+    padding: 0 .24rem;
+}
+
+.gue_com_item {
+    border-top: 1px solid #e4e4e4;
+    padding: .3rem 0;
+    position: relative;
+}
+
+.gue_portrait {
+    width: .9rem;
+}
+.gue_name_wrap{
+    margin: .1rem 0 .2rem;
+}
+
+.gue_right {
+    margin-left: .25rem;
+    width: 82%;
+}
+
+.gue_com_date {
+    font-size: .18rem;
+    color: #666;
+}
+
+.gue_txt {
+    margin-bottom: .2rem;
+}
+
+.gue_com_eximg {
+    display: inline-block;
+    width: 1.82rem;
+    margin-right: .1rem;
+}
+.gue_com_eximg:last-child{
+    margin-right: 0;
+}
+
+/*服务介绍*/
+.service_int{
+    padding: .4rem;
+    font-size: .3rem;
+    line-height: .6rem;
+}
