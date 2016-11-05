@@ -6,6 +6,8 @@
     <meta name="screen-orientation" content="portrait">
     <title>首页</title>
     <link href="styles/reset.css" rel="stylesheet">
+    <link href="styles/owl.carousel.css" rel="stylesheet">
+    <link href="styles/owl.theme.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
@@ -17,7 +19,14 @@
         <h3>首页</h3>
     </div>
     <div class="content">
-        <img class="week_banner" src="images/index_banner.jpg" alt="index banner 加载中"/>
+
+        <div id="owl-demo" class="owl-carousel" >
+            <div class="item"><a><img src="images/index_banner.jpg" alt="img"></a></div>
+            <div class="item"><a><img src="images/index_banner.jpg" alt="img"></a></div>
+            <div class="item"><a><img src="images/index_banner.jpg" alt="img"></a></div>
+        </div>
+
+
         <section class="service_suggest">
             <div class="ser_head clearfix">
                 <div class="ser_head_online fl">
@@ -155,5 +164,20 @@
         <a class="week_mine" href="javascript:;"><i class="icon_week"></i>我的</a>
     </div>
 </div>
+
+<script src="js/lib/jquery-1.10.2.min.js"></script>
+<script src="js/lib/owlcarousel/owl.carousel.min.js"></script>
+<script>
+
+    $(function(){
+
+        $('#owl-demo').owlCarousel({
+            items:1,
+            singleItem:true,
+            autoPlay: true
+        });
+    });
+
+</script>
 </body>
 </html>
