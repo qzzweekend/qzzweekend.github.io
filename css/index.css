@@ -175,13 +175,9 @@
 }
 
 .gue_com_eximg {
-    display: inline-block;
+    float: left;
     width: 1.82rem;
-    margin-right: .1rem;
-}
-
-.gue_com_eximg:last-child {
-    margin-right: 0;
+    margin:0 .1rem .1rem 0;
 }
 
 /*·şÎñ½éÉÜ*/

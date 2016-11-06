@@ -13,12 +13,6 @@
 </head>
 <body>
 <div class="all_elements">
-    <!--<div class="header">-->
-        <!--&lt;!&ndash;<a href="javascript:window.history.go(-1);" class="header_back">&ndash;&gt;-->
-            <!--&lt;!&ndash;<i class="head_back icon_week"></i>&ndash;&gt;-->
-        <!--&lt;!&ndash;</a>&ndash;&gt;-->
-        <!--<h3>首页</h3>-->
-    <!--</div>-->
     <div class="content no_header">
         <!--banner 轮播图-->
         <div id="owl-demo" class="owl-carousel" >
@@ -55,6 +49,7 @@
                 <h3 class="service_title"><i class="introduce_tips icon_week"></i><em>服务介绍</em><i class="introduce_tips icon_week"></i></h3>
             </a>
         </section>
+
         <section class="package_present">
             <div class="week_model_head clearfix">
                 <span class="fl week_model_title"><i></i>包装美图</span>
@@ -92,9 +87,22 @@
                         <p class="pack_list_title">密语花园</p>
                         <span class="pack_praise"><i class="icon_week"></i>462</span>
                     </li>
+                    <li>
+                        <img class="pack_img" src="images/pack_exhibition.jpg" alt=""/>
+
+                        <p class="pack_list_title">密语花园</p>
+                        <span class="pack_praise"><i class="icon_week"></i>462</span>
+                    </li>
+                    <li>
+                        <img class="pack_img" src="images/pack_exhibition.jpg" alt=""/>
+
+                        <p class="pack_list_title">密语花园</p>
+                        <span class="pack_praise"><i class="icon_week"></i>462</span>
+                    </li>
                 </ul>
             </div>
         </section>
+
         <section class="guest_comments">
             <div class="week_model_head line clearfix">
                 <span class="fl week_model_title"><i></i>用户评论</span>
@@ -111,11 +119,10 @@
                         </div>
                         <p class="gue_txt">朋友很满意，买了俩瓶三百多的红酒，寄给平台包装下，身价瞬间涨了几倍呃！</p>
 
-                        <div class="gue_eximg_wrap">
-                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/><img class="gue_com_eximg"
-                                                                                                  src="images/gue_comment1.jpg"
-                                                                                                  alt=""/><img
-                                class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
+                        <div class="gue_eximg_wrap clearfix">
+                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
+                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
+                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
                         </div>
                     </div>
                 </li>
@@ -129,11 +136,10 @@
                         </div>
                         <p class="gue_txt">朋友很满意，买了俩瓶三百多的红酒，寄给平台包装下，身价瞬间涨了几倍呃！</p>
 
-                        <div class="gue_eximg_wrap">
-                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/><img class="gue_com_eximg"
-                                                                                                  src="images/gue_comment1.jpg"
-                                                                                                  alt=""/><img
-                                class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
+                        <div class="gue_eximg_wrap clearfix">
+                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
+                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
+                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
                         </div>
                     </div>
                 </li>
@@ -147,16 +153,16 @@
                         </div>
                         <p class="gue_txt">朋友很满意，买了俩瓶三百多的红酒，寄给平台包装下，身价瞬间涨了几倍呃！</p>
 
-                        <div class="gue_eximg_wrap">
-                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/><img class="gue_com_eximg"
-                                                                                                  src="images/gue_comment1.jpg"
-                                                                                                  alt=""/><img
-                                class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
+                        <div class="gue_eximg_wrap clearfix">
+                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
+                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
+                            <img class="gue_com_eximg" src="images/gue_comment1.jpg" alt=""/>
                         </div>
                     </div>
                 </li>
             </ul>
         </section>
+
     </div>
 
     <div class="footer">
@@ -170,11 +176,24 @@
 <script>
 
     $(function(){
-
+        //轮播图
         $('#owl-demo').owlCarousel({
             singleItem:true,
             autoPlay: true
         });
+
+        //包装图片展示个数
+        var packWidth=$('.pack_list >li').eq(0).outerWidth(true),n=$('.pack_img').length;
+        $('.pack_list').css('width',n*packWidth);
+
+        //评论处图片个数
+        var img_num=$('.gue_com_eximg').length;
+        for(var i=0;i<img_num; i++){
+            if(i%3 ==2){
+                console.log(i);
+                $('.gue_com_eximg').eq(i).css('marginLeft',0);
+            }
+        }
     });
 
 </script>
