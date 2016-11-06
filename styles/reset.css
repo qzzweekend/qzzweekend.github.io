@@ -304,9 +304,9 @@ a {
 
 .footer > a i {
     display: block;
-    margin: .12rem auto 0;
-    width: .42rem;
-    height: .43rem;
+    margin: .1rem auto .02rem;
+    width: .45rem;
+    height: .45rem;
     background-size: 9rem 5.1rem;
 }
 
