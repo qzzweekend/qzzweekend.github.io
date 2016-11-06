@@ -161,8 +161,8 @@
 }
 
 .gue_right {
-    margin-left: .25rem;
-    width: 82%;
+    padding-left: .25rem;
+    overflow: hidden;
 }
 
 .gue_com_date {

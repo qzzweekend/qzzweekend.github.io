@@ -215,7 +215,7 @@ a {
     right: 0;
     pointer-events: all;
     z-index: 99;
-    background-color: #fff;
+    background-color: #fafafa;
 }
 
 .header .header_back {
@@ -246,6 +246,18 @@ a {
     margin: 0 1.15rem;
     white-space: nowrap;
     font-size: 0.34rem;
+}
+
+.header .add_more {
+    width: 1.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    position: absolute;
+    right: .28rem;
+    top: 0;
+    text-align: right;
+    color: #333;
+
 }
 
 .content {
@@ -290,34 +302,34 @@ a {
 
 .footer > a i {
     display: block;
-    margin: .25rem auto .1rem;
-    width: 0.5rem;
-    height: .47rem;
-    background-size: 9.9rem 5.5rem;
+    margin: .25rem auto .08rem;
+    width: .42rem;
+    height: .45rem;
+    background-size: 9rem 5.1rem;
 }
 
 .footer > a.week_home i {
-    background-position: -.6rem -1.39rem;
+    background-position: -.55rem -1.3rem;
 }
 
 .footer > a.week_home.on i {
-    background-position: .04rem -1.39rem;
+    background-position: .02rem -1.3rem;
 }
 
 .footer > a.week_order i {
-    background-position: -2.07rem -1.39rem;
+    background-position: -1.9rem -1.3rem;
 }
 
 .footer > a.week_order.on i {
-    background-position: -1.34rem -1.39rem;
+    background-position: -1.23rem -1.3rem;
 }
 
 .footer > a.week_mine i {
-    background-position: -3.65rem -1.39rem;
+    background-position: -3.33rem -1.3rem;
 }
 
 .footer > a.week_mine.on i {
-    background-position: -2.8rem -1.39rem;
+    background-position: -2.58rem -1.3rem;
 }
 
 /*===============================all elements, header, site right end===============================*/
@@ -348,4 +360,8 @@ a {
     position: absolute;
     top: .42rem;
     right: .24rem;
+}
+
+.back_white {
+    background-color: #fff;
 }

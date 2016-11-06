@@ -1,0 +1,129 @@
+/*register_one start*/
+
+.register input {
+    background-color: transparent;
+}
+
+.register_ul {
+    padding: .6rem .56rem;
+}
+
+.register_ul > li {
+    height: 1.18rem;
+    line-height: 1.18rem;
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    margin-bottom: .3rem;
+}
+
+.phone_num, .identify_code {
+    width: 60%;
+    height: 100%;
+    font-size: .29rem;
+    margin-left: .6rem;
+    padding-left: .3rem;
+}
+
+.get_identify_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: .46rem;
+    height: 100%;
+    color: #8b56e4;
+}
+
+.register_ul .icon_week {
+    width: .36rem;
+    height: .48rem;
+    position: absolute;
+    left: .3rem;
+    top: .36rem;
+    background-size: 8.6rem 5rem;
+}
+
+.phone_tips {
+    background-position: -2.06rem -2rem;
+}
+
+.identify_tips {
+    background-position: -2.8rem -2rem;
+}
+
+.register_ul .invite_tips {
+    width: .45rem;
+    left: .28rem;
+    top: .4rem;
+    background-position: -1.24rem -2rem;
+}
+
+/*register_finish start*/
+.reg_finish {
+    background-color: #fff;
+    padding: .3rem .24rem .6rem;
+    margin-bottom: 1.1rem;
+}
+
+.reg_finish_ul > li {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    position: relative;
+}
+
+.contact_title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: .3rem;
+}
+
+.contact_wrap {
+    margin-left: 1.45rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.contact_wrap i {
+    right: 0;
+}
+
+.contact_wrap input {
+    padding-left: .25rem;
+    width: 100%;
+    height: 1.1rem;
+    font-size: .3rem;
+}
+
+/*我的好友以及我邀请的好友 start*/
+.my_friend_ul {
+    margin-top: .2rem;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    background-color: #fff;
+    padding: 0 .24rem;
+}
+
+.my_friend_item {
+    height: 1.4rem;
+    line-height: 1.4rem;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+}
+.my_friend_item:last-child {
+    border: none;
+}
+
+.my_friend_item img {
+    width: .9rem;
+    height: .9rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .2rem;
+}
+
+.join_date{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
