@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
     <meta name="screen-orientation" content="portrait">
-    <title>线上直邮</title>
+    <title>网商转邮</title>
     <link href="styles/reset.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <script src="js/lib/jquery-1.10.2.min.js"></script>
@@ -16,20 +16,20 @@
             <i class="head_back icon_week"></i>
         </a>
 
-        <h3>线上直邮</h3>
+        <h3>网商转邮</h3>
     </div>
     <div class="content">
         <section class="send_name">
             <div class="clearfix">
                 <div class="fl">
-                    <label for="">送礼人</label>
+                    <label >送礼人</label>
                     <input type="text" value="LIang"/>
                 </div>
                 <a href="javascript:;" class="fr revise_name">修改署名</a>
             </div>
             <div class="clearfix">
                 <div class="fl">
-                    <label for="">收礼人</label>
+                    <label >收礼人</label>
                     <span>小姚</span>
                 </div>
                 <a href="javascript:;" class="fr choose_friend"><span>请选择好友</span><i class="icon_week week_more"></i></a>
@@ -37,23 +37,20 @@
         </section>
         <section class="gift_detail week_common_wrap">
             <div class="web_address">
-                <label for="">网站链接</label><input type="text" placeholder="请输入商品的网购主页地址"/>
+                <label >网站链接</label><input type="text" placeholder="请输入物品名称"/>
             </div>
             <div class="goods_box">
-                <label for="goods" class="remark">备注信息</label>
-                <textarea name="goods" id="" rows="10" placeholder="请输入商品的型号或颜色属性"></textarea>
-            </div>
-            <div>
-                <label for="">物品单价</label>
-                <input type="text" placeholder="请输入您购买物品的单价"/>
-            </div>
-            <div class="clearfix">
-                <label class="fl" for="">购买数量</label>
-                <div class="fl purchase_wrap"><span class="icon_week minus"></span><i class="purchase_num">1</i><span class="icon_week plus"></span></div>
+                <label for="goods_remarks" class="remark">备注信息</label>
+                <textarea name="goods" id="goods_remarks" rows="10" placeholder="请输入商品的型号或颜色属性"></textarea>
+                <div class="goods_packbox">
+                    <label for="goods_pack_cont" class="remark">包装备注</label>
+                    <textarea name="goods" id="goods_pack_cont" rows="10" placeholder="请输入商品的型号或颜色属性"></textarea>
+                </div>
             </div>
 
+
         </section>
-        <a href="payment.html" class="button_common">算一算费用</a>
+        <a href="payment.html" class="button_common">下一步</a>
     </div>
 </div>
 </body>
