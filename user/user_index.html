@@ -4,29 +4,67 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
     <meta name="screen-orientation" content="portrait">
-    <title>首页</title>
+    <title>个人中心</title>
     <link href="../styles/reset.css" rel="stylesheet">
-    <link href="../styles/owl.carousel.css" rel="stylesheet">
-    <link href="../styles/owl.theme.css" rel="stylesheet">
-    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/user.css" rel="stylesheet">
     <script src="../js/lib/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="all_elements">
-    <div class="header">
-        <a href="javascript:window.history.go(-1);" class="header_back">
-            <i class="head_back icon_week"></i>
-        </a>
-        <h3>个人中心</h3>
-    </div>
-    <div class="content">
+    <div class="content no_header">
+        <section class="member_wrap">
+            <div class="member_bg_wrap">
+                <div class="portrait_small">
+                    <div class="circle_bg"><img src="../images/gue_portrait.png" alt=""/></div>
+                    <p class="member_name">LIang</p>
 
+                    <div><i class="mem_level_tips icon_week"></i><span class="member_level_tit">普通会员</span></div>
+                </div>
+            </div>
+            <div class="clearfix gift_details">
+                <div class="fl"><a href="javascript:;"><span class="receive_num">26</span>
+
+                    <p>收到的礼物</p></a></div>
+                <span class="line_middle"></span>
+
+                <div class="fl"><a href="javascript:;"><span class="send_num">38</span>
+
+                    <p>送出的礼物</p></a></div>
+            </div>
+        </section>
+        <div class="member_ser">
+            <a href="javascript:;" class="member_ser_link">
+                <i class="icon_week member_tips"></i>会员服务<i class="icon_week week_more"></i>
+            </a>
+        </div>
+        <ul class="user_link_ul">
+            <li>
+                <a href="my_friend.html" class="my_associate_tips">
+                    <em class="icon_week"></em>我的好友<i class="icon_week week_more"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="receive_addr_tips">
+                    <em class="icon_week"></em>收礼地址<i class="icon_week week_more"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="inviting_tips">
+                    <em class="icon_week"></em>邀请有奖<i class="icon_week week_more"></i>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html" class="settings_tips">
+                    <em class="icon_week"></em>设置<i class="icon_week week_more"></i>
+                </a>
+            </li>
+        </ul>
     </div>
 
     <div class="footer">
-        <a class="week_home on" href="../index.html"><i class="icon_week"></i>首页</a>
+        <a class="week_home" href="../index.html"><i class="icon_week"></i>首页</a>
         <a class="week_order" href="javascript:;"><i class="icon_week"></i>订单</a>
-        <a class="week_mine" href="user/user_index.html"><i class="icon_week"></i>我的</a>
+        <a class="week_mine on" href="user_index.html"><i class="icon_week"></i>我的</a>
     </div>
 </div>
 
