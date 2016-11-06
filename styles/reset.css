@@ -262,7 +262,7 @@ a {
 
 .content {
     padding: 1rem 0;
-    margin-bottom: .6rem;
+    margin-bottom: .4rem;
     width: 100%;
     height: auto;
 }
@@ -280,6 +280,8 @@ a {
     z-index: 99;
     background-color: #fff;
     padding-bottom: .2rem;
+    border-top: 1px solid #e3dee7;
+    height: 1rem;
 }
 
 .footer > a.on {
@@ -302,9 +304,9 @@ a {
 
 .footer > a i {
     display: block;
-    margin: .25rem auto .08rem;
+    margin: .12rem auto 0;
     width: .42rem;
-    height: .45rem;
+    height: .43rem;
     background-size: 9rem 5.1rem;
 }
 
