@@ -332,21 +332,60 @@
     text-align: center;
 }
 
-.log_off_title{
+.log_off_title {
     margin-bottom: .45rem;
 }
 
-.log_off_btn{
+.log_off_btn {
     margin: 0 .36rem;
     height: .94rem;
     line-height: .94rem;
-    border:1px solid #934cf4;
+    border: 1px solid #934cf4;
     display: block;
     border-radius: .12rem;
     -webkit-border-radius: .12rem;
     color: #934cf4;
     font-size: .3rem;
     text-align: center;
+}
+
+/* ’¿Òµÿ÷∑*/
+.gift_address {
+    margin-top: .2rem;
+    padding: .4rem .24rem 0;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.gift_add_name {
+    display: inline-block;
+    margin-bottom: .25rem;
+}
+
+.gift_about_address {
+    margin-bottom: .25rem;
+}
+
+.edit_msg {
+    position: absolute;
+    right: .24rem;
+    top: .38rem;
+    width: .4rem;
+    height: .4rem;
+    background-position: -8.52rem -2.05rem;
+    background-size: 9rem 5rem;
+}
+
+.edit_msg_btn {
+    width: 1rem;
+    display: block;
+    height: 1.2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 
