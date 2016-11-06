@@ -13,7 +13,7 @@
     line-height: 1.18rem;
     border-radius: .1rem;
     -webkit-border-radius: .1rem;
-    border: 1px solid #e4e4e4;
+    border: 1px solid #efefef;
     position: relative;
     margin-bottom: .3rem;
 }
@@ -81,7 +81,7 @@
 
 .contact_wrap {
     margin-left: 1.45rem;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #efefef;
 }
 
 .contact_wrap i {
@@ -98,8 +98,8 @@
 /*我的好友以及我邀请的好友 start*/
 .my_friend_ul {
     margin-top: .2rem;
-    border-top: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
     background-color: #fff;
     padding: 0 .24rem;
 }
@@ -107,7 +107,7 @@
 .my_friend_item {
     height: 1.4rem;
     line-height: 1.4rem;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #efefef;
     position: relative;
 }
 .my_friend_item:last-child {

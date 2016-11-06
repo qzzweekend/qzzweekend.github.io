@@ -22,8 +22,8 @@
 .week_common_wrap {
     background-color: #fff;
     padding: 0 .24rem;
-    border-top: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
     margin-top: .2rem;
 }
 
@@ -40,8 +40,8 @@
 }
 
 .service_suggest {
-    border-top: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
     padding: 0 .26rem;
     margin: .2rem 0;
     background-color: #fff;
@@ -49,7 +49,7 @@
 
 .ser_head {
     padding: .4rem 0;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #efefef;
 }
 
 .ser_head_online {
@@ -93,8 +93,8 @@
 
 /*包装展示start*/
 .package_present {
-    border-top: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
     background-color: #fff;
     margin-bottom: .2rem;
 }
@@ -147,7 +147,7 @@
 }
 
 .gue_com_item {
-    border-top: 1px solid #e4e4e4;
+    border-top: 1px solid #efefef;
     padding: .3rem 0;
     position: relative;
 }
@@ -230,12 +230,15 @@
 /*包装美图end*/
 
 /*线上直邮start*/
+.web_address input{
+    width: 72%;
+}
 .send_name {
     background-color: #fff;
     padding: 0 .24rem;
     margin: .2rem 0;
-    border-top: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
 }
 
 .send_name > div {
@@ -244,7 +247,7 @@
 }
 
 .send_name > div:first-child {
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #efefef;
 }
 
 .send_name > div:last-child {
@@ -289,7 +292,7 @@
 .gift_detail > div {
     height: 1.2rem;
     line-height: 1.2rem;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #efefef;
 }
 
 .gift_detail > div .remark {
@@ -348,7 +351,7 @@
 
 /*支付订单start*/
 .pay_name > div:first-child {
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #efefef;
 }
 
 .price_all {
@@ -373,7 +376,7 @@
 }
 
 .price_all_wrap > div {
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #efefef;
 }
 
 .price_all_wrap > div:last-child {
