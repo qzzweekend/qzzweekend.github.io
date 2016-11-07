@@ -58,7 +58,7 @@
 }
 
 .ser_img {
-    width: 60%;
+    width: 50%;
     margin: 0 auto .16rem;
 }
 
@@ -107,6 +107,9 @@
 .pack_list {
     width: 14.8rem;
 }
+.pack_list a{
+    color: #333;
+}
 
 .pack_list > li {
     float: left;
@@ -116,13 +119,16 @@
 }
 
 .pack_list_title {
-    margin: .24rem 0 .17rem;
+    margin: .24rem 0 .17rem .2rem;
 }
 
 .pack_img {
     width: 2.79rem;
 }
-
+.pack_praise{
+    color: #999;
+    margin-left: .2rem;
+}
 .pack_praise > i {
     display: inline-block;
     width: 0.25rem;
