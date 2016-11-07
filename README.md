@@ -1,2 +1,0 @@
-# qzzweekend.github.io
-weekend
