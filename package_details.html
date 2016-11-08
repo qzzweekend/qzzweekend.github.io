@@ -4,53 +4,79 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
     <meta name="screen-orientation" content="portrait">
-    <title>包装美图</title>
+    <title>包装展示</title>
     <link href="styles/reset.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-<div class="all_elements">
+<div class="all_elements back_white">
     <div class="header">
         <a href="javascript:window.history.go(-1);" class="header_back">
             <i class="head_back icon_week"></i>
         </a>
 
-        <h3>包装美图</h3>
+        <h3>包装展示</h3>
     </div>
     <div class="content">
-        <ul class="package_list_box clearfix">
+        <ul class="pack_all_ul">
             <li>
-                <img class="package_img" src="images/package_list1.jpg" alt=""/>
-                <h3>包装美图</h3>
-                <span class="pack_praise"><i class="icon_week"></i>462</span>
+                <div class="clearfix pack_topic_head">
+                    <h3 class="fl">台湾之乡主题包装</h3>
+                    <span class="fr">11-12</span>
+                </div>
+                <img src="images/pack_topic1.jpg" alt=""/>
             </li>
             <li>
-                <img class="package_img" src="images/package_list1.jpg" alt=""/>
-                <h3>包装美图</h3>
-                <span class="pack_praise"><i class="icon_week"></i>462</span>
+                <div class="clearfix pack_topic_head">
+                    <h3 class="fl">1，内包装细节</h3>
+                </div>
+                <img src="images/pack_topic1.jpg" alt=""/>
             </li>
             <li>
-                <img class="package_img" src="images/package_list1.jpg" alt=""/>
-                <h3>包装美图</h3>
-                <span class="pack_praise"><i class="icon_week"></i>462</span>
-            </li>
-            <li>
-                <img class="package_img" src="images/package_list1.jpg" alt=""/>
-                <h3>包装美图</h3>
-                <span class="pack_praise"><i class="icon_week"></i>462</span>
-            </li>
-            <li>
-                <img class="package_img" src="images/package_list1.jpg" alt=""/>
-                <h3>包装美图</h3>
-                <span class="pack_praise"><i class="icon_week"></i>462</span>
-            </li>
-            <li>
-                <img class="package_img" src="images/package_list1.jpg" alt=""/>
-                <h3>包装美图</h3>
-                <span class="pack_praise"><i class="icon_week"></i>462</span>
+                <div class="clearfix pack_topic_head">
+                    <h3 class="fl">2，内包装细节</h3>
+                </div>
+                <img src="images/pack_topic1.jpg" alt=""/>
             </li>
         </ul>
+        <div class="pack_topic_heart">
+            <img src="images/heart_bg.png" class="pack_topic_heart_bg" alt="">
+            <img src="images/heart.png" class="pack_topic_heart_tip" alt=""/>
+            <span class="pack_topic_num">152</span>
+        </div>
     </div>
 </div>
+
+
+<script src="js/lib/jquery-1.10.2.min.js"></script>
+<script>
+
+
+    $(function () {
+        var praise_num = parseInt($('.pack_topic_num').html());
+        $('.pack_topic_heart').click(function () {
+            praise_num++;
+            $('.pack_topic_num').html(praise_num);
+            $('.pack_topic_heart_tip').attr('src','images/heart_on.png')
+            var oWidth = $('.pack_topic_heart_tip').width();
+            var oHeight = $('.pack_topic_heart_tip').height();
+            var oLeft = $('.pack_topic_heart_tip').position().left;
+            $('.pack_topic_heart_tip').animate({
+
+                width: oWidth * 1.3,
+                height: oHeight * 1.3,
+                left: oLeft / 1.1
+            }, 100, function () {
+
+                $('.pack_topic_heart_tip').animate({
+                    width: oWidth,
+                    height: oHeight,
+                    left: oLeft
+                }, 100);
+            });
+
+        });
+    });
+</script>
 </body>
 </html>

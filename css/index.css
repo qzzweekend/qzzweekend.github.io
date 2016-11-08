@@ -107,7 +107,8 @@
 .pack_list {
     width: 14.8rem;
 }
-.pack_list a{
+
+.pack_list a {
     color: #333;
 }
 
@@ -125,17 +126,19 @@
 .pack_img {
     width: 2.79rem;
 }
-.pack_praise{
+
+.pack_praise {
     color: #999;
     margin-left: .2rem;
 }
+
 .pack_praise > i {
     display: inline-block;
     width: 0.25rem;
     height: .25rem;
     margin-right: .15rem;
-    background-position: -6.38rem -2.02rem;
-    background-size: 11.44rem 5.06rem;
+    background-position: -6.14rem -2.14rem;
+    background-size: 11rem 5.36rem;
 }
 
 /*包装展示end*/
@@ -183,7 +186,7 @@
 .gue_com_eximg {
     float: left;
     width: 1.82rem;
-    margin:0 .1rem .1rem 0;
+    margin: 0 .1rem .1rem 0;
 }
 
 /*服务介绍*/
@@ -232,9 +235,10 @@
 /*包装美图end*/
 
 /*线上直邮start*/
-.web_address input{
+.web_address input {
     width: 72%;
 }
+
 .send_name {
     background-color: #fff;
     padding: 0 .24rem;
@@ -390,16 +394,17 @@
 }
 
 /*活动规则start*/
-.rules_wrap{
+.rules_wrap {
     padding: .4rem .24rem 0;
 }
-.rules_wrap p{
+
+.rules_wrap p {
     line-height: .6rem;
     margin-top: .3rem;
 }
 
 /*个人转邮start*/
-.pack_select i{
+.pack_select i {
     display: inline-block;
     vertical-align: top;
     width: .4rem;
@@ -410,28 +415,30 @@
     background-size: 10.5rem 5.9rem;
 }
 
-.pack_select i.on{
+.pack_select i.on {
     background-position: -9.3rem -2.44rem;
     background-size: 10.5rem 5.9rem;
 }
 
-.pack_select >span:first-child{
+.pack_select > span:first-child {
     margin-right: .6rem;
 }
 
-.image_choose{
+.image_choose {
     display: inline-block;
     position: relative;
     overflow: hidden;
 }
-.image_choose input[type=file]{
+
+.image_choose input[type=file] {
     position: absolute;
     left: 0;
     top: 0;
     visibility: hidden;
     height: 100%;
 }
-.image_choose i{
+
+.image_choose i {
     vertical-align: top;
     margin: .25rem 0 .2rem;
     display: inline-block;
@@ -441,18 +448,54 @@
     background-position: .06rem -3rem;
 }
 
-.week_common_wrap .img_choose_wrap{
+.week_common_wrap .img_choose_wrap {
     height: auto;
 }
 
-.next_button{
+.next_button {
     margin-top: -.2rem;
 }
 
-.gift_detail .goods_box{
+.gift_detail .goods_box {
     line-height: normal;
 }
 
+/*包装详情start*/
+.pack_topic_head {
+    padding: .4rem .24rem;
+}
+
+.pack_topic_head h3 {
+    font-size: .3rem;
+}
+
+.pack_all_ul {
+    margin-bottom: .3rem;
+}
+
+.pack_topic_heart {
+    width: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.pack_topic_heart_tip {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -.4rem;
+    margin-left: -.27rem;
+    width: .54rem;
+    height: .48rem;
+}
+
+.pack_topic_num {
+    display: block;
+    margin-top: .1rem;
+    font-size: .24rem;
+    color: #999;
+}
 
 
 

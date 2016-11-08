@@ -169,12 +169,12 @@
 
 @media (min-width: 374px) , screen and (orientation: landscape) {
     .member_bg_wrap {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 3.9rem;
-        background: url("../images/user_bg.png") no-repeat;
+        /*position: absolute;*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*width: 100%;*/
+        /*height: 3.9rem;*/
+        /*background: url("../images/user_bg.png") no-repeat;*/
         background-size: cover;
     }
 }
@@ -388,8 +388,161 @@
     top: 0;
 }
 
+/*我获得的的奖励*/
 
+.my_reward_ul {
+    padding: 0 .44rem;
+}
 
+.my_reward_ul > li {
+    height: 1.8rem;
+    margin-top: .3rem;
+    text-align: center;
+    overflow: hidden;
+    color: #b6b6b6;
+}
+
+.reward {
+    background: url("../images/reward.png") no-repeat;
+    background-size: contain;
+}
+
+.reward.active {
+    background: url("../images/reward_on.png") no-repeat;
+    background-size: contain;
+}
+
+.reward h3 {
+    font-size: .32rem;
+    margin: .42rem 0 .2rem;
+}
+
+.reward.active h3 {
+    color: #c36a18;
+}
+
+.reward.active span {
+    font-size: .26rem;
+    color: #e49552;
+}
+
+/*接受邀请*/
+.accept_inviting {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    background: url("../images/accept_bg.jpg") no-repeat;
+    background-size: 7.5rem 12.54rem;
+    padding: 0 .44rem;
+    margin: 0;
+}
+
+.accept_btn {
+    position: absolute;
+    left: .44rem;
+    right: .44rem;
+    bottom: .4rem;
+    height: 1.24rem;
+    color: #fff;
+    font-size: .34rem;
+    text-align: center;
+    line-height: 1.3rem;
+    background: url("../images/accept_btn.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.inviting_fri {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    height: 100%;
+    background: url("../images/invite_fri.jpg") no-repeat;
+    background-size: 7.5rem 14.89rem;
+    padding: 0;
+    margin: 0;
+    padding-bottom: .84rem;
+}
+
+.invite_btn {
+    display: block;
+    height: 1.24rem;
+    margin: 0 auto;
+    color: #fff;
+    font-size: .34rem;
+    text-align: center;
+    background: url("../images/invite_btn.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.invite_btn_wrap{
+    padding: 0 .58rem .8rem;
+}
+
+.act_rule_btn {
+    display: block;
+    width: 3rem;
+    margin: 5.8rem auto .35rem;
+    text-align: center;
+}
+
+.invite_code_box{
+    padding: 0 .58rem 1rem;
+    color: #265082;
+}
+.invite_code_box i{
+    font-size: .5rem;
+    color: #ffcf3f;
+}
+
+.copy_code{
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    border: 2px solid #2d5382;
+    padding: .15rem .2rem;
+    color: #2d5382;
+}
+
+.inviting_fri_bot{
+    padding: 0 .35rem;
+    background-color: #81bcfe;
+}
+
+.inviting_fri_bot a{
+    width: 48%;
+}
+.inviting_fri_bot div{
+    width: 100%;
+    height: 4.06rem;
+    background: url("../images/invited_fri.png") no-repeat;
+    background-size: 100% 100%;
+    color: #6b2f00;
+    text-align: center;
+    line-height: 6rem;
+    margin-bottom: .84rem;
+}
+
+.inviting_fri_bot .fr >div{
+    background: url("../images/reward_tip.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.inviting_fri_bot i{
+    font-weight: bold;
+    font-size: .6rem;
+}
+
+@media (min-width: 374px) , screen and (orientation: landscape) {
+    .inviting_fri {
+
+        background-size: cover;
+    }
+    .goodFriend_ele {
+        background-color: #81bcfe;
+    }
+}
 
 
 
