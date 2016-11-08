@@ -434,8 +434,8 @@
     height: 100%;
     min-height: 100%;
     max-height: 100%;
-    background: url("../images/accept_bg.jpg") no-repeat;
-    background-size: 7.5rem 12.54rem;
+    background: url("../images/accept_bg.jpg") no-repeat center;
+    background-size: cover;
     padding: 0 .44rem;
     margin: 0;
 }
