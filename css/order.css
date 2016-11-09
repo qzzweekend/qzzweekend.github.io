@@ -1,0 +1,18 @@
+
+
+.order_finish_ul{
+    margin-top: .2rem;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    background-color: #fff;
+    padding: 0 .26rem;
+}
+.order_finish_ul >li{
+    height: 1.26rem;
+    line-height: 1.26rem;
+
+}
+
+.order_finish_ul >li .fr{
+    color: #999;
+}

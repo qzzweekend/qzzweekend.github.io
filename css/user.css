@@ -111,7 +111,7 @@
     position: relative;
 }
 
-.has_added{
+.has_added {
     position: absolute;
     right: .26rem;
     top: 0;
@@ -136,7 +136,7 @@
     top: 0;
 }
 
-.remove_btn{
+.remove_btn {
     position: absolute;
     right: 0;
     top: 0;
@@ -146,7 +146,7 @@
     text-align: right;
 }
 
-.sure_add_btn{
+.sure_add_btn {
     position: absolute;
     right: .26rem;
     top: .4rem;
@@ -162,10 +162,9 @@
     color: #934cf4;
 }
 
-.sure_add_btn.white{
+.sure_add_btn.white {
     border: none;
 }
-
 
 /*个人中心主页start*/
 .member_wrap {
@@ -258,7 +257,7 @@
     color: #999;
 }
 
-.gift_details a{
+.gift_details a {
     width: 100%;
     height: 100%;
     display: block;
@@ -522,7 +521,7 @@
     background-size: 100% 100%;
 }
 
-.invite_btn_wrap{
+.invite_btn_wrap {
     padding: 0 .58rem .8rem;
 }
 
@@ -533,16 +532,17 @@
     text-align: center;
 }
 
-.invite_code_box{
+.invite_code_box {
     padding: 0 .58rem 1rem;
     color: #265082;
 }
-.invite_code_box i{
+
+.invite_code_box i {
     font-size: .5rem;
     color: #ffcf3f;
 }
 
-.copy_code{
+.copy_code {
     border-radius: .2rem;
     -webkit-border-radius: .2rem;
     border: 2px solid #2d5382;
@@ -550,15 +550,16 @@
     color: #2d5382;
 }
 
-.inviting_fri_bot{
+.inviting_fri_bot {
     padding: 0 .35rem;
     background-color: #81bcfe;
 }
 
-.inviting_fri_bot a{
+.inviting_fri_bot a {
     width: 48%;
 }
-.inviting_fri_bot div{
+
+.inviting_fri_bot div {
     width: 100%;
     height: 4.06rem;
     background: url("../images/invited_fri.png") no-repeat;
@@ -569,12 +570,12 @@
     margin-bottom: .84rem;
 }
 
-.inviting_fri_bot .fr >div{
+.inviting_fri_bot .fr > div {
     background: url("../images/reward_tip.png") no-repeat;
     background-size: 100% 100%;
 }
 
-.inviting_fri_bot i{
+.inviting_fri_bot i {
     font-weight: bold;
     font-size: .6rem;
 }
@@ -584,12 +585,13 @@
 
         background-size: cover;
     }
+
     .goodFriend_ele {
         background-color: #81bcfe;
     }
 }
 
-.search_wechat{
+.search_wechat {
     height: 2.18rem;
     background-color: #fff;
     padding: 0 .2rem;
@@ -598,7 +600,7 @@
     border-bottom: 1px solid #efefef;
 }
 
-.wechat_input{
+.wechat_input {
     width: 4.53rem;
     height: .8rem;
     font-size: .28rem;
@@ -610,20 +612,20 @@
     font-size: .28rem;
 }
 
-.search_wechat_btn{
+.search_wechat_btn {
     display: inline-block;
     width: 2.28rem;
     height: .8rem;
     line-height: .8rem;
     font-size: .32rem;
     text-align: center;
-    background-color:#934cf4 ;
+    background-color: #934cf4;
     color: #fff;
     border-radius: .12rem;
     -webkit-border-radius: .12rem;
 }
 
-.add_friends_linkbtn{
+.add_friends_linkbtn {
     position: absolute;
     right: .26rem;
     top: .29rem;
@@ -638,7 +640,7 @@
     -webkit-border-radius: .12rem;
 }
 
-.search_none{
+.search_none {
     text-align: center;
     width: 2.4rem;
     height: 2.4rem;
@@ -651,7 +653,7 @@
 
 }
 
-.search_no_tip{
+.search_no_tip {
     width: 1.2rem;
     height: 1.2rem;
     margin: 0 auto .5rem;
@@ -661,9 +663,237 @@
 }
 
 /*收到的礼物*/
-.gift_receive_wrap{
-    heigth:4.4rem;
-    background: url("../images/g");
+.gift_tot_wrap {
+    height: 4.4rem;
+    background: url("../images/gift_receive.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 1.6rem;
+}
+
+.gift_tot_wrap.send_gifts {
+    background: url("../images/gift_send.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg_color_none {
+    background-color: transparent;
+}
+
+.gift_rec_title {
+    height: 1.5rem;
+    color: #fff;
+    width: 4rem;
+    position: relative;
+    text-align: center;
+    font-size: .34rem;
+    margin-left: .5rem;
+}
+
+.gift_rec_title i {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.tot_rec {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gift_foot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.gift_ul {
+    padding: 0 .26rem;
+    background-color: #fff;
+}
+
+.gift_ul > li {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    border-bottom: 1px solid #efefef;
+}
+
+.gift_ul > li:last-child {
+    border-bottom: none;
+}
+
+.gift_ul > .fl, .gift_ul > .fr {
+    width: 50%;
+}
+
+.face_img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.04rem;
+    height: 1.04rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-right: .25rem;
+}
+
+/*会员页*/
+.member_head {
+    height: 2.26rem;
+    padding: 0 .26rem;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: .2rem;
+}
+
+.face_portrait_img {
+    width: 1.44rem;
+    height: 1.44rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-top: .42rem;
+    margin-right: .34rem;
+}
+
+.face_head_right {
+    overflow: hidden;
+    padding-top: .6rem;
+}
+
+.face_head_right >span{
+    font-size: .34rem;
+}
+
+.face_head_right > div {
+    margin-top: .16rem;
+}
+
+.mem_blue {
+    display: inline-block;
+    vertical-align: middle;
+    width: .5rem;
+    height: .45rem;
+    background-position: -8.08rem -1.44rem;
+    background-size: 10.5rem 5.9rem;
+    margin-right: .2rem;
+}
+
+.regular_mem {
+    color: #934cf4;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: .04rem;
+}
+
+.expire_time {
+    font-size: .26rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: .04rem;
+}
+
+.renews {
+    position: absolute;
+    right: .26rem;
+    top: .95rem;
+    width: .96rem;
+    height: .54rem;
+    line-height: .54rem;
+    text-align: center;
+    color: #934cf4;
+    border: 2px solid #934cf4;
+}
+
+.member_package {
+    background-color: #fff;
+    margin-bottom: .2rem;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.member_package h3, .mem_rights h3 {
+    height: 1rem;
+    line-height: 1rem;
+    padding-left: .26rem;
+    border-bottom: 1px solid #efefef;
+}
+
+.member_package_ul {
+    padding: 0 .26rem;
+}
+
+.member_package_ul > li {
+    height: 1.09rem;
+    line-height: 1.09rem;
+    border-bottom: 1px solid #efefef;
+}
+
+.member_package_ul > li:last-child {
+    border-bottom: none;
+}
+
+.member_package_ul span {
+    color: #f75d5d;
+}
+
+.recharge {
+    width: 1.05rem;
+    height: .46rem;
+    border-radius: .23rem;
+    line-height: .46rem;
+    color: #fff;
+    text-align: center;
+    background-color: #f75d5d;
+    margin-top: .27rem;
+}
+
+.mem_rights {
+    background-color: #fff;
+}
+
+.mem_rights_ul {
+    padding: 0 .26rem;
+}
+
+.mem_rights_ul li > div {
+    float: left;
+}
+
+.mem_rights_ul li {
+    height: 1.4rem;
+    line-height: 1.4rem;
+    border-bottom: 1px solid #efefef;
+}
+
+.mem_rights_ul li > span {
+    float: left;
+    width: .85rem;
+    height: .85rem;
+    background-position: -4.26rem -.04rem;
+    background-size: 8.6rem 4.6rem;
+    margin: .28rem .28rem 0 0;
+}
+
+.mem_rights_ul li > span.envelope_tip {
+    background-position: -6.74rem -.04rem;
+}
+
+.mem_rights_ul li > span.pack_percent_tip{
+    background-position: -5.57rem -.04rem;
+}
+
+.mem_rights_ul .online_email {
+    padding-top: .36rem;
+    line-height: normal;
+}
+
+.mem_rights_ul .online_email p{
+    margin-bottom: .04rem;
+}
+
+.mem_rights_ul .online_email span{
+    font-size: .24rem;
 }
 
 
