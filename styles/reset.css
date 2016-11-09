@@ -441,3 +441,20 @@ a {
     background-color: #e8e8e8;
 }
 
+/*toast*/
+#week_toast{
+    width: 2.4rem;
+    height: .6rem;
+    line-height: .6rem;
+    border-radius: .06rem;
+    -webkit-border-radius: .06rem;
+    background-color: red;
+    color: #fff;
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    margin-left: -1.2rem;
+    text-align: center;
+    opacity: 0;
+}
+

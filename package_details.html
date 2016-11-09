@@ -53,28 +53,71 @@
 
 
     $(function () {
+
+        $.extend({
+            tipsBox: function (options) {
+                options = $.extend({
+                    obj: null,  //显示在哪个标签
+                    str: "+1",
+                    startSize: "12px",
+                    endSize: "25px",
+                    interval: 600,
+                    color: "#a575e3",
+                    callback: function () {
+                    }
+                }, options);
+
+                $("body").append("<span class='praisenum'>" + options.str + "</span>");
+                var box = $(".praisenum");
+                var left = options.obj.offset().left + options.obj.width() / 2;
+                var top = options.obj.offset().top - options.obj.height()/5;
+                box.css({
+                    "position": "absolute",
+                    "left": left + "px",
+                    "top": top + "px",
+                    "z-index": 99,
+                    "font-size": options.startSize,
+                    "line-height": options.endSize,
+                    "color": options.color
+                });
+                box.animate({
+                    "font-size": options.endSize,
+                    "opacity": "0",
+                    "top": top - parseInt(options.endSize) + "px"
+                }, options.interval, function () {
+                    box.remove();
+                    options.callback();
+                });
+            }
+        });
+
         var praise_num = parseInt($('.pack_topic_num').html());
-        $('.pack_topic_heart').click(function () {
+        var bFlag=false;
+        $(".pack_topic_heart").click(function () {
+            if(bFlag){
+                var toast=$('<div id="week_toast">亲，已经赞过啦！</div>');
+                toast.appendTo($(document.body));
+                toast.animate({
+                    opacity:1
+                },200,'linear',function(){
+                    setTimeout(function () {
+                        toast.animate({
+                            opacity:0
+                        },400,function(){
+                            toast.remove();
+                        });
+                    },1000)
+                });
+                return;
+            }
+            bFlag=true;
+            $('.pack_topic_heart_tip').attr('src','images/heart_on.png');
             praise_num++;
             $('.pack_topic_num').html(praise_num);
-            $('.pack_topic_heart_tip').attr('src','images/heart_on.png')
-            var oWidth = $('.pack_topic_heart_tip').width();
-            var oHeight = $('.pack_topic_heart_tip').height();
-            var oLeft = $('.pack_topic_heart_tip').position().left;
-            $('.pack_topic_heart_tip').animate({
-
-                width: oWidth * 1.3,
-                height: oHeight * 1.3,
-                left: oLeft / 1.1
-            }, 100, function () {
-
-                $('.pack_topic_heart_tip').animate({
-                    width: oWidth,
-                    height: oHeight,
-                    left: oLeft
-                }, 100);
+            $.tipsBox({
+                obj: $(this),
+                str: "赞+1"
             });
-
         });
     });
 </script>
