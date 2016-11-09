@@ -111,6 +111,13 @@
     position: relative;
 }
 
+.has_added{
+    position: absolute;
+    right: .26rem;
+    top: 0;
+    color: #934cf4;
+}
+
 .my_friend_item:last-child {
     border: none;
 }
@@ -573,6 +580,12 @@
     .goodFriend_ele {
         background-color: #81bcfe;
     }
+}
+
+.search_wechat{
+    height: 2.18rem;
+    background-color: #fff;
+    padding: 0 .2rem;
 }
 
 

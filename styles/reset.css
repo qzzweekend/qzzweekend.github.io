@@ -443,18 +443,19 @@ a {
 
 /*toast*/
 #week_toast{
-    width: 2.4rem;
-    height: .6rem;
-    line-height: .6rem;
+    width: 4.46rem;
+    height: 1.04rem;
+    line-height: 1.04rem;
     border-radius: .06rem;
     -webkit-border-radius: .06rem;
-    background-color: red;
+    background-color: #777;
     color: #fff;
     position: fixed;
     bottom: 2rem;
     left: 50%;
-    margin-left: -1.2rem;
+    margin-left: -2.23rem;
     text-align: center;
     opacity: 0;
+    font-size: .3rem;
 }
 

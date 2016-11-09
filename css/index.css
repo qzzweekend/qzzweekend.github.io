@@ -330,9 +330,9 @@
     position: absolute;
     left: 0;
     top: .28rem;
-    width: .56rem;
-    height: .56rem;
-    background-position: 0px 0px;
+    width: .58rem;
+    height: .58rem;
+    background-position: 0 0;
     background-position: -6.871rem -2.52rem;
     background-size: 11rem 6.3rem;
 }
@@ -341,9 +341,9 @@
     position: absolute;
     right: 0;
     top: .28rem;
-    width: .56rem;
-    height: .56rem;
-    background-position: 0px 0px;
+    width: .58rem;
+    height: .58rem;
+    background-position: 0 0;
     background-position: -7.97rem -2.52rem;
     background-size: 11rem 6.3rem;
 }
