@@ -258,6 +258,13 @@
     color: #999;
 }
 
+.gift_details a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
 .line_middle {
     position: absolute;
     top: .36rem;
@@ -653,7 +660,11 @@
     background-size: 8.84rem 4.9rem;
 }
 
-
+/*收到的礼物*/
+.gift_receive_wrap{
+    heigth:4.4rem;
+    background: url("../images/g");
+}
 
 
 
