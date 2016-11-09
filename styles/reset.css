@@ -253,7 +253,7 @@ a {
     height: 1rem;
     line-height: 1rem;
     position: absolute;
-    right: .28rem;
+    right: .26rem;
     top: 0;
     text-align: right;
     color: #333;
@@ -361,9 +361,83 @@ a {
     background-size: 10.68rem 5rem;
     position: absolute;
     top: .42rem;
-    right: .24rem;
+    right: .26rem;
 }
 
 .back_white {
     background-color: #fff;
 }
+
+/*µ¯´°start*/
+.week_mask {
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.4;
+    display: none;
+}
+
+.pop_container {
+    position: fixed;
+    z-index: 1000;
+    top: 1rem;
+    left: 1.5rem;
+    background-color: #fff;
+    width: 5.78rem;
+    min-height: 3.2rem;
+    border-radius: .12rem;
+    -webkit-border-radius: .12rem;
+    font-size: .3rem;
+    overflow: hidden;
+    display: none;
+
+}
+
+.pop_head {
+    padding: .6rem .26rem .9rem;
+
+}
+
+.pop_head > span, .pop_head > p {
+    display: block;
+    margin-left: .4rem;
+    margin-bottom: .35rem;
+}
+
+.pop_choose_bot {
+    padding: 0 .4rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.pop_choose {
+    border-top: 1px solid #e8e8e8;
+    height: .9rem;
+    line-height: .9rem;
+}
+
+.pop_choose > span {
+    width: 49%;
+    height: 100%;
+    text-align: center;
+}
+
+.pop_choose .pop_logout_btn {
+    color: #934cf4;
+}
+
+.pop_line {
+    width: 1px;
+    height: .34rem;
+    position: absolute;
+    left: 50%;
+    top: .3rem;
+    background-color: #e8e8e8;
+}
+

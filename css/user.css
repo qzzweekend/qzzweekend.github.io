@@ -62,7 +62,7 @@
 /*register_finish start*/
 .reg_finish {
     background-color: #fff;
-    padding: .3rem .24rem .6rem;
+    padding: .3rem .26rem .6rem;
     margin-bottom: 1.1rem;
 }
 
@@ -101,7 +101,7 @@
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
     background-color: #fff;
-    padding: 0 .24rem;
+    padding-left: .26rem;
 }
 
 .my_friend_item {
@@ -125,9 +125,40 @@
 
 .join_date {
     position: absolute;
-    right: 0;
+    right: .26rem;
     top: 0;
 }
+
+.remove_btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #c82a29;
+    width: 1.2rem;
+    padding-right: .26rem;
+    text-align: right;
+}
+
+.sure_add_btn{
+    position: absolute;
+    right: .26rem;
+    top: .4rem;
+    color: #c82a29;
+    width: 2rem;
+    height: .58rem;
+    padding-right: .26rem;
+    text-align: right;
+    border: 2px solid #934cf4;
+    border-radius: .12rem;
+    -webkit-border-radius: .12rem;
+    line-height: .55rem;
+    color: #934cf4;
+}
+
+.sure_add_btn.white{
+    border: none;
+}
+
 
 /*个人中心主页start*/
 .member_wrap {
@@ -244,13 +275,13 @@
     line-height: 1.18rem;
     background-color: #fff;
     border-top: 1px solid #efefef;
-    padding: 0 .24rem 0 .94rem;
+    padding: 0 .26rem 0 .94rem;
     position: relative;
 }
 
 .user_link_ul {
     margin-top: .2rem;
-    padding: 0 .24rem;
+    padding: 0 .26rem;
     background-color: #fff;
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
@@ -276,7 +307,7 @@
 
 .member_tips, .user_link_ul em {
     position: absolute;
-    left: .24rem;
+    left: .26rem;
     top: .33rem;
     width: .5rem;
     height: .45rem;
@@ -317,7 +348,7 @@
     line-height: 1.18rem;
     position: relative;
     background-color: #fff;
-    padding: 0 .24rem;
+    padding: 0 .26rem;
     color: #333;
     font-size: .3rem;
     border-top: 1px solid #efefef;
@@ -352,7 +383,7 @@
 /*收礼地址*/
 .gift_address {
     margin-top: .2rem;
-    padding: .4rem .24rem 0;
+    padding: .4rem .26rem 0;
     background-color: #fff;
     position: relative;
     overflow: hidden;
@@ -371,7 +402,7 @@
 
 .edit_msg {
     position: absolute;
-    right: .24rem;
+    right: .26rem;
     top: .38rem;
     width: .4rem;
     height: .4rem;

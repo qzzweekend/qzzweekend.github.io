@@ -2,7 +2,7 @@
 .week_model_head {
     height: 1.2rem;
     line-height: 1.2rem;
-    padding: 0 .24rem;
+    padding: 0 .26rem;
     position: relative;
 }
 
@@ -21,7 +21,7 @@
 
 .week_common_wrap {
     background-color: #fff;
-    padding: 0 .24rem;
+    padding: 0 .26rem;
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
     margin-top: .2rem;
@@ -100,7 +100,7 @@
 }
 
 .pack_list_wrap {
-    padding-left: .24rem;
+    padding-left: .26rem;
     overflow-x: scroll;
 }
 
@@ -147,7 +147,7 @@
 }
 
 .guest_comments_list {
-    padding: 0 .24rem;
+    padding: 0 .26rem;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -241,7 +241,7 @@
 
 .send_name {
     background-color: #fff;
-    padding: 0 .24rem;
+    padding: 0 .26rem;
     margin: .2rem 0;
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
@@ -395,7 +395,7 @@
 
 /*活动规则start*/
 .rules_wrap {
-    padding: .4rem .24rem 0;
+    padding: .4rem .26rem 0;
 }
 
 .rules_wrap p {
@@ -462,7 +462,7 @@
 
 /*包装详情start*/
 .pack_topic_head {
-    padding: .4rem .24rem;
+    padding: .4rem .26rem;
 }
 
 .pack_topic_head h3 {
