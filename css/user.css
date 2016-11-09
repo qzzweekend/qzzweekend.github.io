@@ -586,12 +586,71 @@
     height: 2.18rem;
     background-color: #fff;
     padding: 0 .2rem;
+    line-height: 2.18rem;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
 }
 
 .wechat_input{
     width: 4.53rem;
     height: .8rem;
+    font-size: .28rem;
+    padding-left: .25rem;
+    border-radius: .12rem;
+    -webkit-border-radius: .12rem;
+    border: 1px solid #bcbcbc;
+    margin-right: .17rem;
+    font-size: .28rem;
+}
+
+.search_wechat_btn{
+    display: inline-block;
+    width: 2.28rem;
+    height: .8rem;
     line-height: .8rem;
+    font-size: .32rem;
+    text-align: center;
+    background-color:#934cf4 ;
+    color: #fff;
+    border-radius: .12rem;
+    -webkit-border-radius: .12rem;
+}
+
+.add_friends_linkbtn{
+    position: absolute;
+    right: .26rem;
+    top: .29rem;
+    width: 1.63rem;
+    height: .7rem;
+    line-height: .7rem;
+    font-size: .3rem;
+    text-align: center;
+    color: #934cf4;
+    border: 1px solid #9750f4;
+    border-radius: .12rem;
+    -webkit-border-radius: .12rem;
+}
+
+.search_none{
+    text-align: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    color: #999;
+    position: absolute;
+    left: 50%;
+    margin-left: -1.2rem;
+    top: 50%;
+    margin-top: -1.2rem;
+
+}
+
+.search_no_tip{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 auto .5rem;
+    display: block;
+    background-position: -7.66rem -2.68rem;
+    background-size: 8.84rem 4.9rem;
 }
 
 

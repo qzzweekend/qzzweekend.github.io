@@ -12,7 +12,7 @@
 <body>
 <div class="all_elements">
     <div class="header">
-        <a href="javascript:window.history.go(-1);" class="header_back">
+        <a href="user_index.html" class="header_back">
             <i class="head_back icon_week"></i>
         </a>
 
@@ -38,7 +38,26 @@
 </div>
 
 <script>
+    $(function () {
+        //通过地址栏判断添加好友成功的toast
+        if (location.href.indexOf('addfriend=true') != -1) {
+            var toast = $('<div id="week_toast">添加好友成功</div>');
+            toast.appendTo($(document.body));
+            toast.animate({
+                opacity: 1
+            }, 200, 'linear', function () {
+                setTimeout(function () {
+                    toast.animate({
+                        opacity: 0
+                    }, 400, function () {
+                        toast.remove();
+                    });
+                }, 1000)
+            });
+        }
+        ;
 
+    })
 
 </script>
 </body>

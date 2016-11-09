@@ -17,24 +17,43 @@
         </a>
 
         <h3>添加好友</h3>
-        <a href="add_wechat_friend.html" class="add_more">添加好友</a>
     </div>
     <div class="content">
         <div class="search_wechat">
             <input class="wechat_input" type="text" placeholder="请输入好友的微信账号"/>
+            <a href="javascript:;" class="search_wechat_btn">搜索</a>
         </div>
-        <ul class="my_friend_ul">
+
+        <!--我的好友跳转过来时-->
+        <ul class="my_friend_ul" style="display: none">
             <li class="my_friend_item clearfix">
                 <img src="../images/friend_1.png" alt="friend"/>
                 <span>小花</span>
                 <span class="has_added">已添加</span>
             </li>
         </ul>
+        <!--有搜索结果-->
+        <ul class="my_friend_ul">
+            <li class="my_friend_item clearfix">
+                <img src="../images/friend_1.png" alt="friend"/>
+                <span>小花</span>
+                <a href="javascript:;" class="add_friends_linkbtn">添加好友</a>
+            </li>
+        </ul>
+
+        <!--无搜索结果-->
+        <div class="search_none" style="display: none">
+            <span class="search_no_tip icon_week"></span>
+            暂无搜索结果
+        </div>
+
     </div>
 </div>
 
 <script>
-
+$('.add_friends_linkbtn').click(function(){
+    window.location.href='my_friend.html?addfriend='+'true';
+});
 
 </script>
 </body>
