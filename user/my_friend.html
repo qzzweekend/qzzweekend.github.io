@@ -38,26 +38,7 @@
 </div>
 
 <script>
-    $(function () {
-        //通过地址栏判断添加好友成功的toast
-        if (location.href.indexOf('addfriend=true') != -1) {
-            var toast = $('<div id="week_toast">添加好友成功</div>');
-            toast.appendTo($(document.body));
-            toast.animate({
-                opacity: 1
-            }, 200, 'linear', function () {
-                setTimeout(function () {
-                    toast.animate({
-                        opacity: 0
-                    }, 400, function () {
-                        toast.remove();
-                    });
-                }, 1000)
-            });
-        }
-        ;
 
-    })
 
 </script>
 </body>
