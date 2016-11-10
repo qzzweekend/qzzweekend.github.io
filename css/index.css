@@ -469,6 +469,10 @@
     font-size: .3rem;
 }
 
+.pack_topic_img_wrap{
+    height: 4.3rem;
+}
+
 .pack_all_ul {
     margin-bottom: .3rem;
 }
@@ -488,6 +492,11 @@
     margin-left: -.27rem;
     width: .54rem;
     height: .48rem;
+    background-position: -.88rem -.08rem;
+}
+
+.pack_topic_heart_tip.on {
+    background-position: -.14rem -.08rem;
 }
 
 .pack_topic_num {

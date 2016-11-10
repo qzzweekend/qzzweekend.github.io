@@ -24,24 +24,32 @@
                     <h3 class="fl">台湾之乡主题包装</h3>
                     <span class="fr">11-12</span>
                 </div>
-                <img src="images/pack_topic1.jpg" alt=""/>
+                <div class="pack_topic_img_wrap">
+                    <img src="images/pack_topic1.jpg" alt=""/>
+                </div>
             </li>
             <li>
                 <div class="clearfix pack_topic_head">
-                    <h3 class="fl">1，内包装细节</h3>
+                    <h3 class="fl">台湾之乡主题包装</h3>
+                    <span class="fr">11-12</span>
                 </div>
-                <img src="images/pack_topic1.jpg" alt=""/>
+                <div class="pack_topic_img_wrap">
+                    <img src="images/pack_topic1.jpg" alt=""/>
+                </div>
             </li>
             <li>
                 <div class="clearfix pack_topic_head">
-                    <h3 class="fl">2，内包装细节</h3>
+                    <h3 class="fl">台湾之乡主题包装</h3>
+                    <span class="fr">11-12</span>
                 </div>
-                <img src="images/pack_topic1.jpg" alt=""/>
+                <div class="pack_topic_img_wrap">
+                    <img src="images/pack_topic1.jpg" alt=""/>
+                </div>
             </li>
         </ul>
         <div class="pack_topic_heart">
             <img src="images/heart_bg.png" class="pack_topic_heart_bg" alt="">
-            <img src="images/heart.png" class="pack_topic_heart_tip" alt=""/>
+            <span class="pack_topic_heart_tip icon_week"></span>
             <span class="pack_topic_num">152</span>
         </div>
     </div>
@@ -98,7 +106,7 @@
                 return;
             }
             bFlag=true;
-            $('.pack_topic_heart_tip').attr('src','images/heart_on.png');
+            $('.pack_topic_heart_tip').addClass('on');
             praise_num++;
             $('.pack_topic_num').html(praise_num);
             $.tipsBox({
