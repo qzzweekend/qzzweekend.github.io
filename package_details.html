@@ -95,19 +95,6 @@
         var bFlag=false;
         $(".pack_topic_heart").click(function () {
             if(bFlag){
-                var toast=$('<div id="week_toast">亲，已经赞过啦！</div>');
-                toast.appendTo($(document.body));
-                toast.animate({
-                    opacity:1
-                },200,'linear',function(){
-                    setTimeout(function () {
-                        toast.animate({
-                            opacity:0
-                        },400,function(){
-                            toast.remove();
-                        });
-                    },1000)
-                });
                 return;
             }
             bFlag=true;
