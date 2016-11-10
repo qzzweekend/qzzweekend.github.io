@@ -459,3 +459,15 @@ a {
     font-size: .3rem;
 }
 
+.week_common_wrap {
+    background-color: #fff;
+    padding: 0 .26rem;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+.week_common_h120 {
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+

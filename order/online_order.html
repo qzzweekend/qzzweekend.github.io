@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
+    <meta name="screen-orientation" content="portrait">
+    <title>订单详情</title>
+    <link href="../styles/reset.css" rel="stylesheet">
+    <link href="../css/order.css" rel="stylesheet">
+</head>
+<body>
+<div class="all_elements">
+    <div class="header">
+        <a href="javascript:window.history.go(-1);" class="header_back">
+            <i class="head_back icon_week"></i>
+        </a>
+
+        <h3>订单详情</h3>
+    </div>
+    <div class="content">
+        <section class="order_por_head">
+            <div class="fl">
+                <img src="../images/sender1.png" alt=""/>
+                <p class="order_names_text send_hand"><span class="icon_week"></span>LIang</p>
+            </div>
+            <div class="fl">
+                <img src="../images/receiver1.png" alt=""/>
+                <p class="order_names_text receive_hand"><span class="icon_week"></span>小姚</p>
+            </div>
+        </section>
+        <ul class="order_charge_ul week_common_wrap">
+            <li class="clearfix">
+                <span class="fl">礼物单价</span>
+                <span class="fr">¥10</span>
+            </li>
+            <li class="clearfix">
+                <span class="fl">服务费用</span>
+                <span class="fr">¥10</span>
+            </li>
+            <li class="clearfix">
+                <span class="fl">会员优惠</span>
+                <span class="fr"> - <i class="red_sale">¥21</i></span>
+            </li>
+            <li class="clearfix">
+                <span class="fl price_sum_wrap">总计：¥<i class="price_sum">34</i>会员优惠 <em class="mem_sale_num">-¥21</em></span>
+                <span class="fr">实付 <i class="red_sale">¥13</i></span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+</html>

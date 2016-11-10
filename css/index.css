@@ -19,18 +19,6 @@
     margin-right: .3rem;
 }
 
-.week_common_wrap {
-    background-color: #fff;
-    padding: 0 .26rem;
-    border-top: 1px solid #efefef;
-    border-bottom: 1px solid #efefef;
-    margin-top: .2rem;
-}
-
-.week_common_h120 {
-    height: 1.2rem;
-    line-height: 1.2rem;
-}
 
 /*Ä£¿é×¨ÓÃend*/
 
@@ -283,6 +271,7 @@
 
 .gift_detail {
     margin-bottom: .57rem;
+    margin-top: .2rem;
 }
 
 .gift_detail textarea {
@@ -362,6 +351,10 @@
 
 .price_all {
     width: 2rem;
+}
+
+.pay_name{
+    margin-top: .2rem;
 }
 
 .member_dis {
