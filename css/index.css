@@ -19,7 +19,6 @@
     margin-right: .3rem;
 }
 
-
 /*Ä£¿é×¨ÓÃend*/
 
 /*banner start*/
@@ -353,7 +352,7 @@
     width: 2rem;
 }
 
-.pay_name{
+.pay_name {
     margin-top: .2rem;
 }
 
@@ -462,7 +461,7 @@
     font-size: .3rem;
 }
 
-.pack_topic_img_wrap{
+.pack_topic_img_wrap {
     height: 4.3rem;
 }
 
@@ -497,6 +496,34 @@
     margin-top: .1rem;
     font-size: .24rem;
     color: #999;
+}
+
+.delivery_goods {
+    text-align: center;
+}
+
+.delivery_goods img {
+    width: 2.46rem;
+    height: 2.62rem;
+    margin: 1.15rem auto .28rem;
+}
+
+.delivery_goods p{
+    margin: .2rem 0;
+}
+
+.copy_address_button {
+    display: block;
+    margin: .5rem auto 1.87rem;
+    width: 2.04rem;
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center;
+    color: #1494db;
+    border: 2px solid #1494db;
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+
 }
 
 
