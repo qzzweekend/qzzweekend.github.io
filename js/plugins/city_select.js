@@ -52,7 +52,6 @@ CityList.prototype = {
 
         //省模板替换
         cityData_province = JSON.parse(localStorage.cityData_province);
-        console.log(cityData_province);
         provinceItem = ejs.render(provinceContent, {cityData_province: cityData_province})
         $(provinceItem).appendTo($(document.body));
 
@@ -73,7 +72,6 @@ CityList.prototype = {
 
         //市模板替换
         cityData_city = JSON.parse(localStorage.cityData_city);
-        console.log(cityData_city[0]);
         cityItem = ejs.render(cityContent, {cityData_city: cityData_city[index]});
         $('.city_pop_right_wrap').html('');
         $(cityItem).appendTo($('.city_pop_right_wrap'));
