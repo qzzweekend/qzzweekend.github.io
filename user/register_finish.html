@@ -6,8 +6,8 @@
     <meta name="screen-orientation" content="portrait">
     <title>填写收礼地址</title>
     <link href="../styles/reset.css" rel="stylesheet">
+    <link href="../css/plugins/city_select.css" rel="stylesheet">
     <link href="../css/user.css" rel="stylesheet">
-    <script src="../js/lib/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="all_elements">
@@ -23,18 +23,23 @@
             <ul class="reg_finish_ul">
                 <li>
                     <span class="contact_title">联系电话</span>
-                    <div class="contact_wrap"><input class="contact_num" type="tel" placeholder="请输入您的联系电话" maxlength="11"/></div>
+
+                    <div class="contact_wrap"><input class="contact_num" type="tel" placeholder="请输入您的联系电话"
+                                                     maxlength="11"/></div>
                 </li>
                 <li>
                     <span class="contact_title">选择城市</span>
-                    <div class="contact_wrap">
-                        <input class="contact_num" type="tel" placeholder="请选择您所在的城市" maxlength="11"/>
+
+                    <div class="contact_wrap" id="city_cont_wrap">
+                        <span class="contact_num" id="city_content">请选择您所在的城市</span>
                         <i class="week_more icon_week"></i>
                     </div>
                 </li>
                 <li>
                     <span class="contact_title">详细地址</span>
-                    <div class="contact_wrap"><input class="contact_num" type="tel" placeholder="请输入详细街道门牌号等" maxlength="11"/></div>
+
+                    <div class="contact_wrap"><input class="contact_num" type="tel" placeholder="请输入详细街道门牌号等"
+                                                     maxlength="11"/></div>
                 </li>
             </ul>
 
@@ -43,8 +48,92 @@
     </div>
 </div>
 
+<div class="week_mask"></div>
+<div class="city_select_pop">
+    <div class="city_pop_head">
+        <span class="city_cancel">取消</span>
+
+        <h3>选择城市</h3>
+    </div>
+    <div class="city_pop_content">
+        <div class="city_left_wrap">
+            <ul class="city_left_ul">
+                <li class="city_left_item active">上海</li>
+                <li class="city_left_item">北京</li>
+                <li class="city_left_item">天津</li>
+                <li class="city_left_item">河北</li>
+                <li class="city_left_item">山西</li>
+                <li class="city_left_item">内蒙古</li>
+                <li class="city_left_item">四川</li>
+                <li class="city_left_item">海南</li>
+            </ul>
+        </div>
+        <div class="city_pop_right_wrap">
+            <ul class="city_pop_right_ul">
+                <li class="city_right_item">全上海</li>
+                <li class="city_right_item">黄浦区</li>
+                <li class="city_right_item">卢湾区</li>
+                <li class="city_right_item">徐汇区</li>
+                <li class="city_right_item">长宁区</li>
+                <li class="city_right_item">静安区</li>
+                <li class="city_right_item">黄浦区</li>
+                <li class="city_right_item">卢湾区</li>
+                <li class="city_right_item">徐汇区</li>
+                <li class="city_right_item">长宁区</li>
+                <li class="city_right_item">静安区</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../js/lib/jquery-1.10.2.min.js"></script>
 <script>
 
+    $(function () {
+        //城市选择
+        function citySelect(id) {
+            $(id).on('click', function () {
+                var that=$(this).find('#city_content');
+                $('.week_mask').fadeIn(100);
+                $('.city_select_pop').animate({
+                    bottom: 0
+                }, 200);
+
+                //取消
+                $('.city_cancel').click(function () {
+                    $('.week_mask').fadeOut(100);
+                    $('.city_select_pop').animate({
+                        bottom: '-10rem'
+                    }, 200);
+                });
+
+                $('.week_mask').click(function(){
+                    $(this).fadeOut(100);
+                    $('.city_select_pop').animate({
+                        bottom: '-10rem'
+                    }, 200);
+                });
+
+                //城市点击时
+                $('.city_pop_content').click(function (e) {
+                    var target = $(e.target);
+                    if (target.hasClass('city_left_item') ) {
+                        $('.city_left_ul >li').removeClass('active');
+                        target.addClass('active');
+                    }else if(target.hasClass('city_right_item')){
+                        var cityName=$('.city_left_ul >li.active').html()+'&nbsp;&nbsp;'+target.html();
+                        that.html('<i class="city_text">'+cityName+'</i>');
+                        $('.week_mask').fadeOut(100);
+                        $('.city_select_pop').animate({
+                            bottom: '-10rem'
+                        }, 200);
+                    }
+                });
+
+            });
+        }
+
+        citySelect('#city_cont_wrap');
+    });
 
 </script>
 </body>

@@ -88,11 +88,33 @@
     right: 0;
 }
 
-.contact_wrap input {
-    padding-left: .25rem;
-    width: 100%;
+.contact_wrap .contact_num{
     height: 1.1rem;
     font-size: .3rem;
+    margin-left: .2rem;
+    width: 100%;
+    display: inline-block;
+}
+
+
+.contact_wrap input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #bebebe;
+}
+
+.contact_wrap input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bebebe;
+}
+
+.contact_wrap input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bebebe;
+}
+
+.contact_wrap input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #bebebe;
 }
 
 /*我的好友以及我邀请的好友 start*/
