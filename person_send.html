@@ -6,8 +6,8 @@
     <meta name="screen-orientation" content="portrait">
     <title>个人转邮</title>
     <link href="styles/reset.css" rel="stylesheet">
+    <link href="css/plugins/upload/imgUpload.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <script src="js/lib/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="all_elements">
@@ -32,17 +32,33 @@
                     <label for="">收礼人</label>
                     <span>小姚</span>
                 </div>
-                <a href="javascript:;" class="fr choose_friend"><span>请选择好友</span><i class="icon_week week_more"></i></a>
+                <a href="user/my_friend.html" class="fr choose_friend"><span>请选择好友</span><i class="icon_week week_more"></i></a>
             </div>
         </section>
         <section class="gift_detail week_common_wrap">
-            <div class="img_choose_wrap">
-                <a href="javascript:;" class="image_choose">
-                    <i class="icon_week"></i>
-                    <input type="file" accept="images/*"/>
-                </a>
-
+            <!--上传start-->
+            <div id="uploader" class="img_choose_wrap">
+                <div class="queueList filled">
+                    <div id="dndArea" class="placeholder element-invisible">
+                        <div id="filePicker" class="webuploader-container">
+                            <div>
+                                <input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="statusBar" style="">-->
+                    <!--<div class="progress" style="display: none;">-->
+                        <!--<span class="text">0%</span>-->
+                        <!--<span class="percentage" style="width: 0%;"></span>-->
+                    <!--</div>-->
+                    <!--<div class="info"></div>-->
+                    <!--<div class="btns">-->
+                        <!--<div class="uploadBtn state-ready">开始上传</div>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
+            <!--上传end-->
             <div>
                 <label for="">物品名称</label>
                 <input type="text" placeholder="请输入物品名称"/>
@@ -50,8 +66,8 @@
             <div class="web_address clearfix">
                 <label class="fl" for="">包装类型</label>
                 <div class="clearfix pack_select fl">
-                    <span class="fl"><i class="icon_week double_pack on"></i>套装</span>
-                    <span class="fl"><i class="icon_week single_pack"></i>拆装</span>
+                    <span class="fl"><i class="icon_week on"></i>套装</span>
+                    <span class="fl"><i class="icon_week"></i>拆装</span>
                 </div>
             </div>
             <div class="goods_box">
@@ -63,5 +79,19 @@
         <a href="payment.html" class="button_common next_button">下一步</a>
     </div>
 </div>
+
+<script src="js/lib/jquery-1.10.2.min.js"></script>
+<script src="js/plugins/upload/webuploader.js"></script>
+<script src="js/plugins/upload/imgUpload.js"></script>
+
+<script>
+    $(function(){
+        $('.pack_select >.fl').click(function(){
+            $('.pack_select').find('.icon_week').removeClass('on');
+            $(this).find('.icon_week').addClass('on');
+        });
+    })
+</script>
+
 </body>
 </html>

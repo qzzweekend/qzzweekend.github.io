@@ -7,7 +7,6 @@
     <title>线上直邮</title>
     <link href="styles/reset.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <script src="js/lib/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="all_elements">
@@ -32,7 +31,8 @@
                     <label for="">收礼人</label>
                     <span>小姚</span>
                 </div>
-                <a href="user/my_friend.html" class="fr choose_friend"><span>请选择好友</span><i class="icon_week week_more"></i></a>
+                <a href="user/my_friend.html" class="fr choose_friend"><span>请选择好友</span><i
+                        class="icon_week week_more"></i></a>
             </div>
         </section>
         <section class="gift_detail week_common_wrap">
@@ -49,12 +49,31 @@
             </div>
             <div class="clearfix">
                 <label class="fl" for="">购买数量</label>
-                <div class="fl purchase_wrap"><span class="icon_week minus"></span><i class="purchase_num">1</i><span class="icon_week plus"></span></div>
+
+                <div class="fl purchase_wrap"><span class="icon_week minus"></span><i class="purchase_num">1</i><span
+                        class="icon_week plus"></span></div>
             </div>
 
         </section>
         <a href="payment.html" class="button_common">算一算费用</a>
     </div>
 </div>
+
+<script src="js/lib/jquery-1.10.2.min.js"></script>
+<script>
+    $(function () {
+        var num = 1;
+        $('.purchase_wrap').click(function (e) {
+            if ($(e.target).hasClass('plus')) {
+                num++;
+                $('.purchase_num').html(num);
+            } else if ($(e.target).hasClass('minus') && num > 1) {
+                num--;
+                $('.purchase_num').html(num);
+            }
+        });
+    })
+</script>
+
 </body>
 </html>
