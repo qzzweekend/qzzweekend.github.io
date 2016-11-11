@@ -90,10 +90,14 @@
 
 .contact_wrap .contact_num{
     height: 1.1rem;
-    font-size: .3rem;
+    font-size: .28rem;
     margin-left: .2rem;
     width: 100%;
     display: inline-block;
+}
+
+#city_content{
+    color: #bebebe;
 }
 
 
@@ -813,18 +817,6 @@
     display: inline-block;
     vertical-align: middle;
     margin-top: .04rem;
-}
-
-.renews {
-    position: absolute;
-    right: .26rem;
-    top: .95rem;
-    width: .96rem;
-    height: .54rem;
-    line-height: .54rem;
-    text-align: center;
-    color: #934cf4;
-    border: 2px solid #934cf4;
 }
 
 .member_package {
