@@ -7,7 +7,6 @@
     <title>我的好友</title>
     <link href="../styles/reset.css" rel="stylesheet">
     <link href="../css/user.css" rel="stylesheet">
-    <script src="../js/lib/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="all_elements">
@@ -17,7 +16,7 @@
         </a>
 
         <h3>我的好友</h3>
-        <a href="add_wechat_friend.html" class="add_more">添加好友</a>
+        <a href="javascript:;" class="add_more">添加好友</a>
     </div>
     <div class="content">
         <ul class="my_friend_ul">
@@ -27,19 +26,37 @@
             </li>
             <li class="my_friend_item clearfix">
                 <img src="../images/friend_1.png" alt="friend"/>
-                <span>小花</span>
+                <span>小明</span>
             </li>
             <li class="my_friend_item clearfix">
                 <img src="../images/friend_1.png" alt="friend"/>
-                <span>小花</span>
+                <span>小刚</span>
             </li>
         </ul>
     </div>
 </div>
 
+<script src="../js/lib/jquery-1.10.2.min.js"></script>
 <script>
 
+    $(function(){
+        var urlSearch=window.location.search;
+        $('.my_friend_item').click(function(e){
+            var contactName=$(this).find('span').html();
+            if(urlSearch.indexOf('sendType=online') !=-1){
+                window.location.href=encodeURI('../online_send.html?contactName='+contactName);
+            }else if(url.indexOf('sendType=person') !=-1){
+                window.location.href=encodeURI('../person_send.html?contactName='+contactName);
+            }else if(url.indexOf('sendType=business') !=-1){
+                window.location.href=encodeURI('../business_send.html?contactName='+contactName);
+            }
 
+        });
+
+        $('.add_more').click(function(){
+            window.location.href='add_wechat_friend.html'+urlSearch;
+        });
+    })
 </script>
 </body>
 </html>

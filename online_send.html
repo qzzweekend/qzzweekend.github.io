@@ -11,7 +11,7 @@
 <body>
 <div class="all_elements">
     <div class="header">
-        <a href="javascript:window.history.go(-1);" class="header_back">
+        <a href="index.html" class="header_back">
             <i class="head_back icon_week"></i>
         </a>
 
@@ -29,9 +29,9 @@
             <div class="clearfix">
                 <div class="fl">
                     <label for="">收礼人</label>
-                    <span>小姚</span>
+                    <span class="receive_person">小姚</span>
                 </div>
-                <a href="user/my_friend.html" class="fr choose_friend"><span>请选择好友</span><i
+                <a href="javascript:;" class="fr choose_friend" data-sendType="online"><span>请选择好友</span><i
                         class="icon_week week_more"></i></a>
             </div>
         </section>
@@ -62,6 +62,19 @@
 <script src="js/lib/jquery-1.10.2.min.js"></script>
 <script>
     $(function () {
+        var url_callback=window.location.search;
+        if(url_callback){
+            if(url_callback.indexOf('contactName=') !=-1){
+                $('.receive_person').html(decodeURI(url_callback.substring(13)));
+            }
+        }
+        //选择好友
+        $('.choose_friend').click(function(){
+            window.location.href='user/my_friend.html?sendType='+$(this).attr('data-sendType');
+
+        });
+
+        //加减物品数量
         var gift_num = 1;
         $('.purchase_wrap').click(function (e) {
             if ($(e.target).hasClass('plus')) {

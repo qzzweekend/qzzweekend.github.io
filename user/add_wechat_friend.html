@@ -7,7 +7,6 @@
     <title>添加好友</title>
     <link href="../styles/reset.css" rel="stylesheet">
     <link href="../css/user.css" rel="stylesheet">
-    <script src="../js/lib/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="all_elements">
@@ -42,31 +41,23 @@
     </div>
 </div>
 
+<script src="../js/lib/jquery-1.10.2.min.js"></script>
+<script src="../js/lib/vlm.js"></script>
 <script>
-$('.add_friends_linkbtn').click(function(){
-
-    var timer=null;
-    var toast = $('<div id="week_toast">添加好友成功</div>');
-    toast.appendTo($(document.body));
-    toast.animate({
-        opacity: 1
-    }, 200, 'linear', function () {
-        clearTimeout(timer);
-        timer=setTimeout(function () {
-            toast.animate({
-                opacity: 0
-            }, 400, function () {
-                toast.remove();
-            });
-        }, 1000)
-    });
-    $(this).html('已添加').css('border','none');
-    setTimeout(function(){
-        window.location.href='my_friend.html';
-    },2500)
+    $(function(){
+        var urlSearch=window.location.search;
+        $('.add_friends_linkbtn').click(function(){
+            var urlSearch=window.location.search;;
+            vlm.Utils.toast('添加好友成功');
+            $(this).html('已添加').css('border','none');
+            setTimeout(function(){
+                window.location.href='my_friend.html'+urlSearch;
+            },2500)
 
 
-});
+        });
+    })
+
 
 </script>
 </body>

@@ -291,6 +291,7 @@
     resize: none;
     padding: .28rem;
     margin-bottom: .25rem;
+    font-size: .3rem;
 }
 
 .gift_detail > div {
@@ -320,28 +321,28 @@
 
 .purchase_wrap {
     position: relative;
-    margin-left: .4rem;
+    margin-left: .36rem;
 }
 
 .minus {
     position: absolute;
     left: 0;
-    top: .28rem;
-    width: .58rem;
-    height: .58rem;
+    top: .24rem;
+    width: .62rem;
+    height: .62rem;
     background-position: 0 0;
-    background-position: -6.871rem -2.52rem;
+    background-position: -6.871rem -2.5rem;
     background-size: 11rem 6.3rem;
 }
 
 .plus {
     position: absolute;
     right: 0;
-    top: .28rem;
-    width: .58rem;
-    height: .58rem;
+    top: .24rem;
+    width: .62rem;
+    height: .62rem;
     background-position: 0 0;
-    background-position: -7.97rem -2.52rem;
+    background-position: -7.96rem -2.5rem;
     background-size: 11rem 6.3rem;
 }
 
