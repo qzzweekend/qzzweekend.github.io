@@ -7,7 +7,6 @@
     <title>黑名单</title>
     <link href="../styles/reset.css" rel="stylesheet">
     <link href="../css/user.css" rel="stylesheet">
-    <script src="../js/lib/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="all_elements">
@@ -40,8 +39,18 @@
     </div>
 </div>
 
+<script src="../js/lib/jquery-1.10.2.min.js"></script>
 <script>
+    $(function(){
+        $('.remove_btn').click(function(){
 
+            var that=$(this).parent('.my_friend_item');
+            that.animate({'width':0});
+            setTimeout(function(){
+                that.remove();
+            },500);
+        });
+    })
 
 </script>
 </body>

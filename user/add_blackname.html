@@ -7,7 +7,6 @@
     <title>添加黑名单</title>
     <link href="../styles/reset.css" rel="stylesheet">
     <link href="../css/user.css" rel="stylesheet">
-    <script src="../js/lib/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="all_elements">
@@ -39,8 +38,20 @@
     </div>
 </div>
 
+<script src="../js/lib/jquery-1.10.2.min.js"></script>
 <script>
+    $(function(){
+        $('.sure_add_btn').click(function(){
+            if($(this).hasClass('white')){
+                $(this).removeClass('white');
+                $(this).html('加入黑名单');
+            }else{
+                $(this).addClass('white');
+                $(this).html('加入白名单');
 
+            }
+        });
+    })
 
 </script>
 </body>

@@ -7,7 +7,6 @@
     <title>更换手机号码</title>
     <link href="../styles/reset.css" rel="stylesheet">
     <link href="../css/user.css" rel="stylesheet">
-    <script src="../js/lib/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="all_elements back_white">
@@ -23,21 +22,76 @@
             <ul class="register_ul">
                 <li>
                     <span class="icon_week phone_tips"></span>
-                    <input name="phone_number" class="phone_num" type="tel" maxlength="11" placeholder="请输入新的手机号码"/>
-                    <span class="get_identify_btn">获取验证码</span>
+                    <input name="phone_number" class="phone_num" onkeyup="vlm.Utils.validate.replaceNum(this)" type="tel" maxlength="11" placeholder="请输入新的手机号码"/>
+                    <span class="get_identify_btn" id="change_identify_btn">获取验证码</span>
                 </li>
                 <li>
                     <span class="icon_week identify_tips"></span>
-                    <input name="phone_number" class="identify_code" type="tel" maxlength="11" placeholder="请输入验证码"/>
+                    <input name="phone_number" class="identify_code" onkeyup="vlm.Utils.validate.replaceNum(this)" type="tel" maxlength="6" placeholder="请输入验证码"/>
                 </li>
             </ul>
-            <a href="javascript:;" class="button_common">确认更换</a>
+            <a href="javascript:;" class="button_common" id="change_btn">确认更换</a>
         </section>
     </div>
 </div>
 
+<script src="../js/lib/jquery-1.10.2.min.js"></script>
+<script src="../js/lib/vlm.js"></script>
 <script>
+    $(function () {
 
+        //获取验证码
+        function timedown_reg(obj, seconds) {
+            var lasttime = new Date();
+            var newtime;
+            timer_register = setInterval(function () {
+                seconds--;
+                if (Math.abs(new Date() - lasttime) >= 3000) {
+                    newtime = new Date();
+                    if (Math.ceil(60 - (newtime - lasttime) / 1000) < 1) {
+                        obj.html('获取验证码');
+                        obj.css('color', '#8b56e4');
+                        clearInterval(timer_register);
+                        return;
+                    }
+                    obj.html(Math.ceil(60 - (newtime - lasttime) / 1000) + '秒重发');
+                    obj.css('color', 'rgb(204,204,204');
+                } else {
+                    obj.html(seconds + '秒重发');
+                    obj.css('color', 'rgb(204,204,204');
+                }
+            }, 1000);
+        }
+
+        $('#change_identify_btn').click(function () {
+            if (!vlm.Utils.validate.mobileNo($('.phone_num').val())) {
+                vlm.Utils.toast('请输入正确的手机号');
+                return;
+            }
+            $(this).html('60秒重发');
+            $(this).css('color', '#999');
+            vlm.Utils.toast('验证码已成功发送，请查收');
+            var obj = $(this);
+            timedown_reg(obj, 60);
+        });
+
+        //是否能跳转
+        $('#change_btn').click(function () {
+            if (!vlm.Utils.validate.mobileNo($('.phone_num').val())) {
+                vlm.Utils.toast('请输入正确的手机号');
+                return;
+            }
+            if (!vlm.Utils.validate.code($('.identify_code').val())) {
+                vlm.Utils.toast('请输入验证码');
+                return;
+            }
+
+            vlm.Utils.toast('更换号码成功');
+            setTimeout(function(){
+                window.location.href="settings.html";
+            },1000);
+        });
+    })
 
 </script>
 </body>

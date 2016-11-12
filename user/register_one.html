@@ -29,7 +29,7 @@
                 <li>
                     <span class="icon_week identify_tips"></span>
                     <input name="phone_number" class="identify_code" onkeyup="vlm.Utils.validate.replaceNum(this)"
-                           type="tel" maxlength="11" placeholder="请输入验证码"/>
+                           type="tel" maxlength="6" placeholder="请输入验证码"/>
                 </li>
                 <li>
                     <span class="icon_week invite_tips"></span>
@@ -86,7 +86,7 @@
         //是否能跳转
         $('#register_btn').click(function () {
             if (!vlm.Utils.validate.mobileNo($('.phone_num').val())) {
-                toast('请输入正确的手机号');
+                vlm.Utils.toast('请输入正确的手机号');
                 return;
             }
             if (!vlm.Utils.validate.code($('.identify_code').val())) {

@@ -12,7 +12,7 @@
 <body>
 <div class="all_elements">
     <div class="header">
-        <a href="javascript:window.history.go(-1);" class="header_back">
+        <a href="user_index.html" class="header_back">
             <i class="head_back icon_week"></i>
         </a>
 
@@ -35,16 +35,17 @@
                 </li>
                 <li>
                     <span class="contact_title">详细地址</span>
-                    <div class="contact_wrap"><input class="contact_num" type="tel" placeholder="请输入详细街道门牌号等" maxlength="11"/></div>
+                    <div class="contact_wrap"><input class="contact_num" id="edit_address_det" type="tel" placeholder="请输入详细街道门牌号等"/></div>
                 </li>
             </ul>
 
         </section>
-        <a href="javascript:;" class="button_common">确认</a>
+        <a href="javascript:;" class="button_common" id="edit_address_sure">确认</a>
     </div>
 </div>
 
 <script src="../js/lib/jquery-1.10.2.min.js"></script>
+<script src="../js/lib/vlm.js"></script>
 <script src="../js/lib/ejs.js"></script>
 <script src="../js/plugins/cityData.js"></script>
 <script src="../js/plugins/city_select.js"></script>
@@ -52,6 +53,25 @@
 
     //城市列表选择
     new CityList({id:'#city_edit_wrap','sId':'#city_editContent'});
+
+    //验证输入
+    $('#edit_address_sure').click(function () {
+        if (!vlm.Utils.validate.mobileNo($('.contact_num').val())) {
+            vlm.Utils.toast('请输入正确的手机号');
+            return;
+        }
+        if (!$('#city_editContent').hasClass('selected')) {
+            vlm.Utils.toast('请选择您所在的城市');
+            return;
+        }
+
+        if ($('#edit_address_det').val() == '') {
+            vlm.Utils.toast('请输入详细街道门牌号等');
+            return;
+        }
+
+        window.location.href = 'gift_address.html';
+    });
 
 </script>
 </body>
