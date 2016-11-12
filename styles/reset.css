@@ -368,6 +368,10 @@ a {
     background-color: #fff;
 }
 
+.head_back.icon_back_white{
+    background-position: -4.78rem -2.66rem;
+}
+
 /*µ¯´°start*/
 .week_mask {
     position: fixed;
