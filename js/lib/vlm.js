@@ -73,7 +73,7 @@
                     toast.appendTo($(document.body));
                     toast.animate({
                         opacity: 1
-                    }, 200, 'linear', function () {
+                    }, 'linear', function () {
                         clearTimeout(timer);
                         timer = setTimeout(function () {
                             toast.animate({

@@ -171,21 +171,21 @@
 }
 
 .order_names_text.send_hand .icon_week {
-    width: .36rem;
-    height: .36rem;
+    width: .4rem;
+    height: .4rem;
     display: inline-block;
-    background-position: -.48rem -1.72rem;
+    background-position: -.465rem -1.7rem;
     background-size: 8rem 4.4rem;
-    vertical-align: top;
+    vertical-align: bottom;
 }
 
 .order_names_text.receive_hand .icon_week {
-    width: .36rem;
-    height: .36rem;
+    width: .4rem;
+    height: .4rem;
     display: inline-block;
     background-position: -.48rem -2.26rem;
     background-size: 8rem 4.4rem;
-    vertical-align: top;
+    vertical-align: bottom;
 }
 
 .order_charge_ul > li {

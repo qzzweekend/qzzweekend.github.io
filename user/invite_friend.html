@@ -37,28 +37,12 @@
 </div>
 
 <script src="../js/lib/jquery-1.10.2.min.js"></script>
+<script src="../js/lib/vlm.js"></script>
 <script>
     $(function () {
-        function toast(str) {
-            var timer = null;
-            var toast = $('<div id="week_toast">' + str + '</div>');
-            toast.appendTo($(document.body));
-            toast.animate({
-                opacity: 1
-            }, 200, 'linear', function () {
-                clearTimeout(timer);
-                timer = setTimeout(function () {
-                    toast.animate({
-                        opacity: 0
-                    }, 400, function () {
-                        toast.remove();
-                    });
-                }, 1500)
-            });
-        }
 
         $('.copy_code').click(function(){
-            toast('请长按邀请码选择复制');
+            vlm.Utils.toast('请长按邀请码选择复制');
         });
 
     })

@@ -22,64 +22,60 @@
         <div class="order_lists_wrap">
             <!--未邮寄-->
             <div class="order_lists_item">
-                <a href="person_unsend.html">
-                    <div class="order_lists_head clearfix">
-                        <span class="fl">收礼人：<i>小姚</i></span>
-                        <span class="fr">未邮寄</span>
+                <div class="order_lists_head clearfix">
+                    <span class="fl">收礼人：<i>小姚</i></span>
+                    <span class="fr">未邮寄</span>
+                </div>
+                <div class="order_details">
+                    <span>我们的地址：</span>
+
+                    <div class="clearfix address_copy_wrap">
+                        <span class="fl">上海市闵行区莲花路1181号高优商务中心</span>
+                        <span class="fr address_copy_btn">复制</span>
                     </div>
-                    <div class="order_details">
-                        <span>我们的地址：</span>
+                    <div class="send_countDown clearfix">
+                        <i class="fl icon_week send_bigTip"></i>
 
-                        <div class="clearfix address_copy_wrap">
-                            <span class="fl">上海市闵行区莲花路1181号高优商务中心</span>
-                            <span class="fr address_copy_btn">复制</span>
-                        </div>
-                        <div class="send_countDown clearfix">
-                            <i class="fl icon_week send_bigTip"></i>
+                        <div class="fl">
+                            <span class="countDown_time">邮寄剩余时间：121:26:03</span>
 
-                            <div class="fl">
-                                <span class="countDown_time">邮寄剩余时间：121:26:03</span>
-
-                                <p class="order_tips">如未处理系统将取消订单</p>
-                            </div>
-                        </div>
-                        <div class="order_footer clearfix">
-                            <a href="javascript:;" class="fl cancel_order">取消订单</a>
-                            <span class="fl middle_line"></span>
-                            <a href="javascript:;" class="fl order_sended">已邮寄</a>
+                            <p class="order_tips">如未处理系统将取消订单</p>
                         </div>
                     </div>
-                </a>
+                    <div class="order_footer clearfix">
+                        <a href="javascript:;" class="fl cancel_order">取消订单</a>
+                        <span class="fl middle_line"></span>
+                        <a href="person_unsend.html" class="fl order_sended" id="order_sended">已邮寄</a>
+                    </div>
+                </div>
             </div>
 
             <!--未支付-->
             <div class="order_lists_item">
-                <a href="person_unpay.html">
-                    <div class="order_lists_head clearfix">
-                        <span class="fl">收礼人：<i>小姚</i></span>
-                        <span class="fr">未支付</span>
+                <div class="order_lists_head clearfix">
+                    <span class="fl">收礼人：<i>小姚</i></span>
+                    <span class="fr">未支付</span>
+                </div>
+                <div class="order_details">
+                    <div class="order_service_price clearfix">
+                        <span class="fl">服务费用</span>
+                        <span class="fr">¥26</span>
                     </div>
-                    <div class="order_details">
-                        <div class="order_service_price clearfix">
-                            <span class="fl">服务费用</span>
-                            <span class="fr">¥26</span>
-                        </div>
-                        <div class="send_countDown clearfix">
-                            <i class="fl icon_week send_bigTip"></i>
+                    <div class="send_countDown clearfix">
+                        <i class="fl icon_week send_bigTip"></i>
 
-                            <div class="fl">
-                                <span class="countDown_time">剩余支付时间：121:26:03</span>
+                        <div class="fl">
+                            <span class="countDown_time">剩余支付时间：121:26:03</span>
 
-                                <p class="order_tips">截止时间如未支付，礼物将以慈善方式捐出</p>
-                            </div>
-                        </div>
-                        <div class="order_footer clearfix">
-                            <a href="javascript:;" class="fl cancel_order">取消订单</a>
-                            <span class="fl middle_line"></span>
-                            <a href="javascript:;" class="fl order_sended">已邮寄</a>
+                            <p class="order_tips">截止时间如未支付，礼物将以慈善方式捐出</p>
                         </div>
                     </div>
-                </a>
+                    <div class="order_footer clearfix">
+                        <a href="javascript:;" class="fl cancel_order">取消订单</a>
+                        <span class="fl middle_line"></span>
+                        <a href="person_unpay.html" class="fl order_sended">已邮寄</a>
+                    </div>
+                </div>
             </div>
 
             <!--待收货-->
@@ -121,6 +117,13 @@
     </div>
 </div>
 
+<script src="../js/lib/jquery-1.10.2.min.js"></script>
+<script src="../js/lib/vlm.js"></script>
+<script>
+    $('.address_copy_btn').click(function(){
+        vlm.Utils.toast('请长按地址选择复制');
+    });
+</script>
 
 </body>
 </html>
