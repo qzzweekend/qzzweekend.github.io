@@ -22,7 +22,7 @@
 
         <div class="invite_btn_wrap"><a href="accept_inviting.html" class="invite_btn"></a></div>
         <div class="invite_code_box clearfix">
-            <span class="fl">我的邀请码：<textarea id="inviteCode">456123</textarea></span>
+            <span class="fl">我的邀请码：<i id="inviteCode">456123</i></span>
             <a href="javascript:;" class="copy_code fr" >点击复制</a>
         </div>
         <div class="inviting_fri_bot clearfix">
@@ -57,16 +57,10 @@
             });
         }
 
-        var clipboard = new Clipboard('.copy_code');
-        clipboard.on('success', function (e) {
-            //console.log(e);
-            toast('邀请码复制成功');
+        $('.copy_code').click(function(){
+            toast('请长按邀请码选择复制');
         });
 
-        clipboard.on('error', function (e) {
-            alert(e.target);
-            toast('邀请码复制失败');
-        });
     })
 
 </script>
