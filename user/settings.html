@@ -45,8 +45,6 @@
 </div>
 <script>
     $(function(){
-        console.log($('.pop_container').width());
-        console.log($('.pop_container').height());
         $('.log_off_btn').click(function(){
             $('.week_mask').fadeIn();
             $('.pop_container').show().css({
@@ -60,12 +58,12 @@
 
         $('.cancel_btn').click(function(){
             $('.pop_container').hide();
-            $('.week_mask').fadeOut();
+            $('.week_mask').fadeOut(100);
         });
 
         $('.pop_logout_btn').click(function(){
             $('.pop_container').hide();
-            $('.week_mask').fadeOut();
+            $('.week_mask').fadeOut(100);
         });
     })
 </script>
