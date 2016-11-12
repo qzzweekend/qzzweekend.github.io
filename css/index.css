@@ -222,8 +222,14 @@
 /*包装美图end*/
 
 /*线上直邮start*/
-.web_address input {
-    width: 72%;
+.send_inp_common {
+    width: 5rem;
+    height: 1.15rem;
+    font-size: .26rem;
+}
+
+.send_inp_common.width_self{
+    width: 4rem;
 }
 
 .send_name {
@@ -237,6 +243,7 @@
 .send_name > div {
     height: 1.2rem;
     line-height: 1.2rem;
+    position: relative;
 }
 
 .send_name > div:first-child {
@@ -262,6 +269,9 @@
 
 .revise_name {
     color: #1295db;
+    position: absolute;
+    right: .26rem;
+    top: 0;
 }
 
 .choose_friend {
@@ -284,7 +294,6 @@
 }
 
 .gift_detail > div {
-    height: 1.2rem;
     line-height: 1.2rem;
     border-bottom: 1px solid #efefef;
 }
@@ -353,7 +362,7 @@
 }
 
 .pay_name {
-    margin-top: .2rem;
+    margin: .2rem 0;
 }
 
 .member_dis {

@@ -111,7 +111,7 @@ CityList.prototype = {
                     that.cityShow(target.index());
                 } else if (target.hasClass('city_right_item')) {
                     var cityName = $('.city_left_ul >li.active').html() + '&nbsp;&nbsp;' + target.html();
-                    _this.html('<i class="city_text">' + cityName + '</i>');
+                    _this.html('<i class="city_text">' + cityName + '</i>').addClass('selected');
                     $('.week_mask').fadeOut(100);
                     $('.city_select_pop').animate({
                         bottom: '-10rem'

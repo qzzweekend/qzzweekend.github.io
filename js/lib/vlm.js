@@ -66,6 +66,25 @@
                     return str.replace(/(^\s*)|(\s*$)/g, "");
                 },
 
+                //提示信息toast
+                toast:function toast(str) {
+                    var timer = null;
+                    var toast = $('<div id="week_toast">' + str + '</div>');
+                    toast.appendTo($(document.body));
+                    toast.animate({
+                        opacity: 1
+                    }, 200, 'linear', function () {
+                        clearTimeout(timer);
+                        timer = setTimeout(function () {
+                            toast.animate({
+                                opacity: 0
+                            }, 400, function () {
+                                toast.remove();
+                            });
+                        }, 1500)
+                    });
+                },
+
                 //验证手机验证码
                 vlidateMobileCode: function (paramsObj) {
                     var data;

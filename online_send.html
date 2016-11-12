@@ -22,7 +22,7 @@
             <div class="clearfix">
                 <div class="fl">
                     <label for="">送礼人</label>
-                    <input type="text" value="LIang"/>
+                    <input type="text" value="LIang" class="send_inp_common width_self" id="send_name_change"/>
                 </div>
                 <a href="javascript:;" class="fr revise_name">修改署名</a>
             </div>
@@ -37,7 +37,7 @@
         </section>
         <section class="gift_detail week_common_wrap">
             <div class="web_address">
-                <label for="">网站链接</label><input type="text" placeholder="请输入商品的网购主页地址"/>
+                <label for="">网站链接</label><input type="text" class="send_inp_common" placeholder="请输入商品的网购主页地址"/>
             </div>
             <div class="goods_box">
                 <label for="goods" class="remark">备注信息</label>
@@ -45,7 +45,7 @@
             </div>
             <div>
                 <label for="">物品单价</label>
-                <input type="text" placeholder="请输入您购买物品的单价"/>
+                <input type="text" class="send_inp_common" placeholder="请输入您购买物品的单价"/>
             </div>
             <div class="clearfix">
                 <label class="fl" for="">购买数量</label>
@@ -62,15 +62,19 @@
 <script src="js/lib/jquery-1.10.2.min.js"></script>
 <script>
     $(function () {
-        var num = 1;
+        var gift_num = 1;
         $('.purchase_wrap').click(function (e) {
             if ($(e.target).hasClass('plus')) {
-                num++;
-                $('.purchase_num').html(num);
-            } else if ($(e.target).hasClass('minus') && num > 1) {
-                num--;
-                $('.purchase_num').html(num);
+                gift_num++;
+                $('.purchase_num').html(gift_num);
+            } else if ($(e.target).hasClass('minus') && gift_num > 1) {
+                gift_num--;
+                $('.purchase_num').html(gift_num);
             }
+        });
+
+        $('.revise_name').click(function () {
+            $('#send_name_change').focus();
         });
     })
 </script>
