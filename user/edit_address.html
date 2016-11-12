@@ -6,8 +6,8 @@
     <meta name="screen-orientation" content="portrait">
     <title>编辑地址</title>
     <link href="../styles/reset.css" rel="stylesheet">
+    <link href="../css/plugins/city_select.css" rel="stylesheet">
     <link href="../css/user.css" rel="stylesheet">
-    <script src="../js/lib/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <div class="all_elements">
@@ -27,8 +27,9 @@
                 </li>
                 <li>
                     <span class="contact_title">选择城市</span>
-                    <div class="contact_wrap">
-                        <input class="contact_num" type="tel" placeholder="请选择您所在的城市" maxlength="11"/>
+
+                    <div class="contact_wrap" id="city_edit_wrap">
+                        <span class="contact_num city_choose_show" id="city_editContent">请选择您所在的城市</span>
                         <i class="week_more icon_week"></i>
                     </div>
                 </li>
@@ -43,8 +44,14 @@
     </div>
 </div>
 
+<script src="../js/lib/jquery-1.10.2.min.js"></script>
+<script src="../js/lib/ejs.js"></script>
+<script src="../js/plugins/cityData.js"></script>
+<script src="../js/plugins/city_select.js"></script>
 <script>
 
+    //城市列表选择
+    new CityList({id:'#city_edit_wrap','sId':'#city_editContent'});
 
 </script>
 </body>

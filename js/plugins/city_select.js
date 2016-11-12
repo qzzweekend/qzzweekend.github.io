@@ -20,6 +20,7 @@ CityList.prototype = {
     constructor: CityList,
     init: function (options) {
         this.id = options.id;
+        this.sId = options.sId;
         this.createPanel();
         this.inputEvent(options.id);
     },
@@ -80,7 +81,7 @@ CityList.prototype = {
     inputEvent: function (id) {
         var that = this;
         $(id).on('click', function () {
-            var _this = $(this).find('#city_content');
+            var _this = $(this).find(that.sId);
             $('.week_mask').fadeIn(100);
             $('.city_select_pop').animate({
                 bottom: 0
