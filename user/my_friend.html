@@ -43,14 +43,7 @@
         var urlSearch=window.location.search;
         $('.my_friend_item').click(function(e){
             var contactName=$(this).find('span').html();
-            if(urlSearch.indexOf('sendType=online') !=-1){
-                window.location.href=encodeURI('../online_send.html?contactName='+contactName);
-            }else if(url.indexOf('sendType=person') !=-1){
-                window.location.href=encodeURI('../person_send.html?contactName='+contactName);
-            }else if(url.indexOf('sendType=business') !=-1){
-                window.location.href=encodeURI('../business_send.html?contactName='+contactName);
-            }
-
+            window.location.href=encodeURI('../online_send.html'+urlSearch+'&contactName='+contactName);
         });
 
         $('.add_more').click(function(){

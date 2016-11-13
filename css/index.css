@@ -34,6 +34,10 @@
     background-color: #fff;
 }
 
+#js_giftOnline, #js_giftPerson, #js_giftBusiness {
+    display: none;
+}
+
 .ser_head {
     padding: .4rem 0;
     border-bottom: 1px solid #efefef;
@@ -228,7 +232,7 @@
     font-size: .26rem;
 }
 
-.send_inp_common.width_self{
+.send_inp_common.width_self {
     width: 4rem;
 }
 
