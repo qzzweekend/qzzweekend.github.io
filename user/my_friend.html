@@ -41,10 +41,12 @@
 
     $(function(){
         var urlSearch=window.location.search;
-        $('.my_friend_item').click(function(e){
-            var contactName=$(this).find('span').html();
-            window.location.href=encodeURI('../online_send.html'+urlSearch+'&contactName='+contactName);
-        });
+        if(urlSearch){
+            $('.my_friend_item').click(function(e){
+                var contactName=$(this).find('span').html();
+                window.location.href=encodeURI('../online_send.html'+urlSearch+'&contactName='+contactName);
+            });
+        }
 
         $('.add_more').click(function(){
             window.location.href='add_wechat_friend.html'+urlSearch;
