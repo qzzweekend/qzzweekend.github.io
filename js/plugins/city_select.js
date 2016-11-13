@@ -37,7 +37,11 @@ CityList.prototype = {
             '<div class="city_left_wrap">' +
             '<ul class="city_left_ul">' +
             '<%for(var i=0;i<cityData_province.length; i++){ %>' +
-            '<li class="city_left_item active"><%=cityData_province[i]%></li>' +
+            '<% if(i == 0) { %>' +
+            '<li class="city_left_item active"><%=cityData_province[0]%></li>' +
+            '<% } else { %>' +
+            '<li class="city_left_item"><%=cityData_province[i]%></li>' +
+            '<% } %>' +
             '<% } %>' +
             '</ul>' +
             '</div>' +
