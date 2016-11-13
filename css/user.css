@@ -559,7 +559,7 @@
 }
 
 .invite_code_box {
-    padding: 0 .58rem 1rem;
+    padding: 0 .58rem;
     color: #265082;
 }
 
@@ -577,7 +577,7 @@
 }
 
 .inviting_fri_bot {
-    padding: 0 .35rem;
+    padding: 1rem .35rem 0;
     background-color: #81bcfe;
 }
 
