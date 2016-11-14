@@ -527,3 +527,7 @@
 .exp_pop_ul > li.active {
     background-color: #f5f2f9;
 }
+
+#write_expressName{
+    display: none;
+}

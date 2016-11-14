@@ -29,23 +29,23 @@
                         <div class="rightDown_arrow_box"><em class="rightDown_arrow icon_week"></em></div>
                     </div>
                 </li>
-                <li id="write_expressName" style="display: none">
+                <li id="write_expressName" data-show="false">
                     <span class="exp_title">快递名称</span>
 
                     <div class="exp_wrap">
-                        <input type="text" class="exp_number" placeholder="请输入快递公司名称"/>
+                        <input type="text" class="exp_number" id="express_com_name" placeholder="请输入快递公司名称"/>
                     </div>
                 </li>
                 <li>
                     <span class="exp_title">快递单号</span>
 
                     <div class="exp_wrap">
-                        <input type="text" class="exp_number" placeholder="请输入快递单号"/>
+                        <input type="text" class="exp_number" id="express_com_num" placeholder="请输入快递单号"/>
                     </div>
                 </li>
             </ul>
         </section>
-        <a href="javascript:;" class="button_common">确认</a>
+        <a href="javascript:;" class="button_common" id="exp_sure_btn">确认</a>
     </div>
 </div>
 
@@ -53,8 +53,8 @@
 <div class="week_mask"></div>
 <div class="exp_pop">
     <ul class="exp_pop_ul">
-        <li data-type="express_none" class="active"><span>其他</span></li>
-        <li><i class="icon_express sf"></i><span>顺丰快递</span></li>
+        <li data-type="express_none"><span>其他</span></li>
+        <li class="active"><i class="icon_express sf"></i><span>顺丰快递</span></li>
         <li><i class="icon_express yd"></i><span>韵达快递</span></li>
         <li><i class="icon_express zt"></i><span>中通快递</span></li>
         <li><i class="icon_express st"></i><span>申通快递</span></li>
@@ -78,12 +78,12 @@
             $('.exp_pop').show();
             $('.exp_pop_ul >li').click(function () {
                 if ($(this).attr('data-type') == 'express_none') {
-                    $('#write_expressName').slideDown();
-                    $('.exp_type').css('paddingLeft',0).find('i').hide();
+                    $('#write_expressName').slideDown().attr('data-show', 'true');
+                    $('.exp_type').css('paddingLeft', 0).find('i').hide();
 
                 } else {
-                    $('#write_expressName').slideUp();
-                    $('.exp_type').css('paddingLeft','.9rem').find('i').show();
+                    $('#write_expressName').slideUp().attr('data-show', 'false');
+                    $('.exp_type').css('paddingLeft', '.9rem').find('i').show();
                     $('.exp_type').find('i').attr('class', $(this).find('i').attr('class'));
                 }
                 $('#exp_selected').html($(this).find('span').html());
@@ -94,6 +94,19 @@
 
             });
 
+        });
+
+        //验证输入
+        $('#exp_sure_btn').click(function () {
+            if (!$('#express_com_name').val() && $('#write_expressName').attr('data-show') == 'true') {
+                vlm.Utils.toast('请输入快递公司名称');
+                return;
+            }
+
+            if (!$('#express_com_num').val()) {
+                vlm.Utils.toast('请输入快递单号');
+                return;
+            }
         });
 
 
