@@ -368,7 +368,7 @@ a {
     background-color: #fff;
 }
 
-.head_back.icon_back_white{
+.head_back.icon_back_white {
     background-position: -4.78rem -2.66rem;
 }
 
@@ -398,12 +398,10 @@ a {
     font-size: .3rem;
     overflow: hidden;
     display: none;
-
 }
 
 .pop_head {
     padding: .6rem .26rem .9rem;
-
 }
 
 .pop_head > span, .pop_head > p {
@@ -432,7 +430,7 @@ a {
     text-align: center;
 }
 
-.pop_choose .pop_logout_btn {
+.pop_choose .cancel_btn {
     color: #934cf4;
 }
 
@@ -446,7 +444,7 @@ a {
 }
 
 /*toast*/
-#week_toast{
+#week_toast {
     width: 4.46rem;
     height: 1.04rem;
     line-height: 1.04rem;

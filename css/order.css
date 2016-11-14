@@ -1,4 +1,8 @@
 
+.add_more.had_finished_btn {
+    color: #8c55e4;
+}
+
 .order_finish_ul {
     margin-top: .2rem;
     border-top: 1px solid #efefef;
@@ -26,7 +30,7 @@
     background-color: #fff;
 }
 
-.order_lists_item a{
+.order_lists_item a {
     color: #333;
 }
 
@@ -110,7 +114,7 @@
     background-size: 8.5rem 4.6rem;
 }
 
-.send_bigTip.order_payed{
+.send_bigTip.order_payed {
     background-position: -7.76rem -1.04rem;
 }
 
@@ -281,15 +285,15 @@
     padding: 0 .26rem;
 }
 
-.web_link_wrap > li span:first-child{
+.web_link_wrap > li span:first-child {
     margin-right: .5rem;
 }
 
-.order_package_remarks{
+.order_package_remarks {
     padding: .4rem .26rem;
 }
 
-.orderPack_remark_cont{
+.orderPack_remark_cont {
     padding-left: .5rem;
     overflow: hidden;
 }
@@ -305,7 +309,7 @@
     margin: 1.15rem auto .28rem;
 }
 
-.delivery_goods p{
+.delivery_goods p {
     margin: .2rem 0;
 }
 
@@ -322,4 +326,204 @@
     -webkit-border-radius: .1rem;
 }
 
+/*¶©µ¥ÎÞstart*/
+.order_noen_wrap {
+    text-align: center;
+    width: 3rem;
+    margin: 3.07rem auto;
+}
 
+.order_noen_wrap h3 {
+    font-size: .29rem;
+}
+
+.order_noen_img {
+    display: inline-block;
+    width: 2.48rem;
+    height: 2.08rem;
+    margin-bottom: .6rem;
+}
+
+.pop_container.order_pop .pop_head {
+    padding: 0;
+    height: 1.95rem;
+    line-height: 1.95rem;
+}
+
+.pop_head > h3 {
+    font-size: .3rem;
+    text-align: center;
+}
+
+.pop_container.order_pop {
+    min-height: 2.87rem;
+}
+
+/*express start*/
+.express_wrap {
+    margin-bottom: 1.4rem;
+}
+
+.exp_title {
+    margin-left: .3rem;
+    font-size: .29rem;
+}
+
+.exp_wrap {
+    position: relative;
+    height: 1rem;
+    line-height: .98rem;
+    border: 2px solid #dedede;
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    font-size: .29rem;
+    background-color: #fff;
+}
+
+.exp_wrap {
+    margin-top: .3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.express_ul {
+    padding: 0 .7rem;
+}
+
+.express_ul > li {
+    padding-top: .45rem;
+}
+
+.icon_express {
+    background: url(../images/icon_express.png) no-repeat;
+    background-size: 9.7rem 1rem;
+}
+
+.exp_type {
+    position: absolute;
+    left: .3rem;
+    top: -.02rem;
+    padding-left: .9rem;
+    font-size: .29rem;
+}
+
+.rightDown_arrow_box {
+    width: 1rem;
+    height: 1rem;
+    border-left: 2px solid #dedede;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rightDown_arrow {
+    width: .3rem;
+    height: .2rem;
+    display: block;
+    margin: .4rem 0 0 .3rem;
+    background-position: -1.17rem -2.35rem;
+    background-size: 8rem 4.4rem;
+}
+
+.exp_number {
+    position: absolute;
+    left: 0;
+    top: -.02rem;
+    height: 1rem;
+    width: 100%;
+    padding-left: .3rem;
+    font-size: .28rem;
+}
+
+.exp_pop {
+    position: fixed;
+    width: 5.26rem;
+    height: 10.59rem;
+    left: 50%;
+    top: 50%;
+    margin-top: -5.295rem;
+    margin-left: -2.63rem;
+    z-index: 1100;
+    background-color: #fff;
+    padding: .3rem 0;
+    display: none;
+}
+
+.exp_pop_ul > li {
+    padding-left: 1.7rem;
+    height: 1rem;
+    line-height: 1rem;
+    position: relative;
+}
+
+.icon_express {
+    position: absolute;
+    left: .68rem;
+    top: .25rem;
+    width: .5rem;
+    height: .5rem;
+}
+
+.icon_express.yd {
+    background-position: -43px 0;
+}
+
+.icon_express.zt {
+    left: .58rem;
+    top: .35rem;
+    background-position: -87px 0;
+    width: .72rem;
+}
+
+.icon_express.st {
+    left: .71rem;
+    width: .56rem;
+    height: .56rem;
+    background-position: -143px 0;
+}
+
+.icon_express.tt {
+    left: .63rem;
+    width: .73rem;
+    background-position: -197px 0;
+}
+
+.icon_express.yz {
+    left: .73rem;
+    top: .18rem;
+    width: .6rem;
+    height: .6rem;
+    background-position: -256px 0;
+}
+
+.icon_express.yt {
+    width: .78rem;
+    height: .66rem;
+    top: .18rem;
+    left: .69rem;
+    background-position: -316px 0;
+}
+
+.icon_express.zjs {
+    width: .78rem;
+    height: .78rem;
+    top: .1rem;
+    left: .64rem;
+    background-position: -378px 0;
+}
+
+.icon_express.rfd {
+    width: .71rem;
+    height: .71rem;
+    top: .18rem;
+    left: .63rem;
+    background-position: -445px 0;
+}
+
+.exp_type .icon_express{
+    left: 0;
+}
+
+.exp_pop_ul > li.active {
+    background-color: #f5f2f9;
+}

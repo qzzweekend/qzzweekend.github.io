@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
+    <meta name="screen-orientation" content="portrait">
+    <title>填写快递单号</title>
+    <link href="../styles/reset.css" rel="stylesheet">
+    <link href="../css/order.css" rel="stylesheet">
+</head>
+<body>
+<div class="all_elements">
+    <div class="header">
+        <a href="javascript:window.history.go(-1);" class="header_back">
+            <i class="head_back icon_week"></i>
+        </a>
+
+        <h3>填写快递单号</h3>
+    </div>
+    <div class="content">
+        <section class="express_wrap">
+            <ul class="express_ul">
+                <li id="exp_choose">
+                    <span class="exp_title">快递公司</span>
+
+                    <div class="exp_wrap">
+                        <h3 class="exp_type"><i class="icon_express sf"></i><span id="exp_selected">顺丰快递</span></h3>
+
+                        <div class="rightDown_arrow_box"><em class="rightDown_arrow icon_week"></em></div>
+                    </div>
+                </li>
+                <li id="write_expressName" style="display: none">
+                    <span class="exp_title">快递名称</span>
+
+                    <div class="exp_wrap">
+                        <input type="text" class="exp_number" placeholder="请输入快递公司名称"/>
+                    </div>
+                </li>
+                <li>
+                    <span class="exp_title">快递单号</span>
+
+                    <div class="exp_wrap">
+                        <input type="text" class="exp_number" placeholder="请输入快递单号"/>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <a href="javascript:;" class="button_common">确认</a>
+    </div>
+</div>
+
+
+<div class="week_mask"></div>
+<div class="exp_pop">
+    <ul class="exp_pop_ul">
+        <li data-type="express_none" class="active"><span>其他</span></li>
+        <li><i class="icon_express sf"></i><span>顺丰快递</span></li>
+        <li><i class="icon_express yd"></i><span>韵达快递</span></li>
+        <li><i class="icon_express zt"></i><span>中通快递</span></li>
+        <li><i class="icon_express st"></i><span>申通快递</span></li>
+        <li><i class="icon_express tt"></i><span>天天快递</span></li>
+        <li><i class="icon_express yz"></i><span>邮政快递</span></li>
+        <li><i class="icon_express yt"></i><span>圆通快递</span></li>
+        <li><i class="icon_express zjs"></i><span>宅急送</span></li>
+        <li><i class="icon_express rfd"></i><span>如风达</span></li>
+    </ul>
+</div>
+
+<script src="../js/lib/jquery-1.10.2.min.js"></script>
+<script src="../js/lib/vlm.js"></script>
+<script>
+    $(function () {
+
+        //取消订单
+        $('#exp_choose').click(function () {
+
+            $('.week_mask').fadeIn();
+            $('.exp_pop').show();
+            $('.exp_pop_ul >li').click(function () {
+                if ($(this).attr('data-type') == 'express_none') {
+                    $('#write_expressName').slideDown();
+                    $('.exp_type').css('paddingLeft',0).find('i').hide();
+
+                } else {
+                    $('#write_expressName').slideUp();
+                    $('.exp_type').css('paddingLeft','.9rem').find('i').show();
+                    $('.exp_type').find('i').attr('class', $(this).find('i').attr('class'));
+                }
+                $('#exp_selected').html($(this).find('span').html());
+                $('.exp_pop_ul >li').removeClass('active');
+                $(this).addClass('active');
+                $('.week_mask').fadeOut();
+                $('.exp_pop').hide();
+
+            });
+
+        });
+
+
+    })
+
+</script>
+
+</body>
+</html>

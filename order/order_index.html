@@ -16,7 +16,7 @@
         </a>
 
         <h3>订单</h3>
-        <a href="order_finished.html" class="add_more">已完成</a>
+        <a href="order_finished.html" class="add_more had_finished_btn">已完成</a>
     </div>
     <div class="content">
         <div class="order_lists_wrap">
@@ -43,9 +43,9 @@
                         </div>
                     </div>
                     <div class="order_footer clearfix">
-                        <a href="javascript:;" class="fl cancel_order">取消订单</a>
+                        <a href="javascript:;" class="fl cancel_order" data-cancelType="unsended">取消订单</a>
                         <span class="fl middle_line"></span>
-                        <a href="person_unsend.html" class="fl order_sended" id="order_sended">已邮寄</a>
+                        <a href="tracking_number.html" class="fl order_sended" id="order_sended">未邮寄</a>
                     </div>
                 </div>
             </div>
@@ -71,9 +71,9 @@
                         </div>
                     </div>
                     <div class="order_footer clearfix">
-                        <a href="javascript:;" class="fl cancel_order">取消订单</a>
+                        <a href="javascript:;" class="fl cancel_order" data-cancelType="unpay">取消订单</a>
                         <span class="fl middle_line"></span>
-                        <a href="person_unpay.html" class="fl order_sended">已邮寄</a>
+                        <a href="person_unpay.html" class="fl order_sended">支付费用</a>
                     </div>
                 </div>
             </div>
@@ -117,12 +117,65 @@
     </div>
 </div>
 
+<div class="week_mask"></div>
+<div class="pop_container order_pop">
+    <div class="pop_head">
+        <h3>是否取消该订单</h3>
+    </div>
+    <div class="pop_choose_bot">
+        <div class="pop_choose clearfix">
+            <span class="fl cancel_btn">否</span>
+            <i class="pop_line"></i>
+            <span class="fr pop_logout_btn">是</span>
+        </div>
+    </div>
+
+</div>
+
 <script src="../js/lib/jquery-1.10.2.min.js"></script>
 <script src="../js/lib/vlm.js"></script>
 <script>
-    $('.address_copy_btn').click(function(){
-        vlm.Utils.toast('请长按地址选择复制');
-    });
+    $(function(){
+
+        //复制地址
+        $('.address_copy_btn').click(function(){
+            vlm.Utils.toast('请长按地址选择复制');
+        });
+
+        //取消订单
+        $('.cancel_order').click(function(){
+            if($(this).attr('data-cancelType') == 'unpay'){
+                $('.pop_head h3').html('需支付退回邮费<span style="color: red"> 16 </span>元');
+                $('.cancel_btn').html('取消');
+                $('.pop_logout_btn').html('确认支付');
+            }else if($(this).attr('data-cancelType') == 'unsended'){
+                $('.pop_head h3').html('是否取消该订单');
+                $('.cancel_btn').html('否');
+                $('.pop_logout_btn').html('是');
+            }
+            $('.week_mask').fadeIn();
+            $('.pop_container').show().css({
+                left:'50%',
+                top:'50%',
+                marginLeft:'-2.89rem',
+                marginTop:'-1.6rem'
+            });
+
+            $('.cancel_btn').click(function(){
+                $('.pop_container').hide();
+                $('.week_mask').fadeOut(100);
+            });
+
+            $('.pop_logout_btn').click(function(){
+                $('.pop_container').hide();
+                $('.week_mask').fadeOut(100);
+            });
+
+        });
+
+
+    })
+
 </script>
 
 </body>
