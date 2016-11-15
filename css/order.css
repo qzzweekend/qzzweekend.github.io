@@ -519,7 +519,7 @@
     background-position: -8.9rem 0;
 }
 
-.exp_type .icon_express{
+.exp_type .icon_express {
     left: 0;
 }
 
@@ -527,9 +527,23 @@
     background-color: #f5f2f9;
 }
 
-#write_expressName{
+#write_expressName {
     display: none;
 }
 
-
-
+@media all and (orientation: landscape) {
+    .exp_pop {
+        position: fixed;
+        width: 5.26rem;
+        left: 50%;
+        top: 50%;
+        margin-top: -2rem;
+        margin-left: -2.63rem;
+        z-index: 1100;
+        background-color: #fff;
+        padding: .3rem 0;
+        display: none;
+        overflow: scroll;
+        height: 4.22rem;
+    }
+}
