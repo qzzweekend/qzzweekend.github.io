@@ -22,15 +22,18 @@
 /*Ä£¿é×¨ÓÃend*/
 
 /*banner start*/
-.week_banner {
+
+.banner_index_wrap{
+    height: 3.59rem;
     margin-bottom: .2rem;
+    overflow: hidden;
 }
 
 .service_suggest {
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
     padding: 0 .26rem;
-    margin: .2rem 0;
+    margin-bottom: .2rem;
     background-color: #fff;
 }
 
