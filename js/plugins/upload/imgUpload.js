@@ -112,7 +112,7 @@ jQuery(function() {
             break;
 
           default:
-            text = '上传失败，请重试';
+            text = '上传失败，请重试1';
             break;
         }
 
