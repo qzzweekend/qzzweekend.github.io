@@ -66,7 +66,7 @@ jQuery(function() {
       id: '#filePicker',
       label: ''
     },
-    auto: true, //自动上传
+    //auto: true, //自动上传
     dnd: '#uploader .queueList',
     paste: document.body,
 
@@ -79,7 +79,7 @@ jQuery(function() {
     disableGlobalDnd: true,
 
     chunked: true,
-    server: 'http://2betop.net/fileupload.php',   //接收图片的后台地址
+    //server: 'http://2betop.net/fileupload.php',   //接收图片的后台地址
     fileNumLimit: 300,
     //fileSizeLimit: 50 * 1024 * 1024,    // 50 M
     //fileSingleSizeLimit: 5 * 1024 * 1024    // 5 M
@@ -332,7 +332,7 @@ jQuery(function() {
       case 'finish':
         stats = uploader.getStats();
         if ( stats.successNum ) {
-          alert( '上传成功' );
+          //alert( '上传成功' );
         } else {
           // 没有成功的图片，重设
           state = 'done';
