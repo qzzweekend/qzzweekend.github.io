@@ -79,7 +79,7 @@ jQuery(function() {
     disableGlobalDnd: true,
 
     chunked: true,
-    //server: 'http://2betop.net/fileupload.php',   //接收图片的后台地址
+    server: 'http://2betop.net/fileupload.php',   //接收图片的后台地址
     fileNumLimit: 300,
     //fileSizeLimit: 50 * 1024 * 1024,    // 50 M
     //fileSingleSizeLimit: 5 * 1024 * 1024    // 5 M
