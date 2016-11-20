@@ -66,6 +66,7 @@ jQuery(function() {
       id: '#filePicker',
       label: ''
     },
+    auto: true, //自动上传
     dnd: '#uploader .queueList',
     paste: document.body,
 
@@ -78,19 +79,13 @@ jQuery(function() {
     disableGlobalDnd: true,
 
     chunked: true,
-    //server: 'http://2betop.net/fileupload.php',
+    //server: '1.php',   //接收图片的后台地址
     fileNumLimit: 300,
-    fileSizeLimit: 5 * 1024 * 1024,    // 200 M
-    fileSingleSizeLimit: 1 * 1024 * 1024    // 50 M
+    //fileSizeLimit: 50 * 1024 * 1024,    // 50 M
+    //fileSingleSizeLimit: 5 * 1024 * 1024    // 5 M
   });
 
-  //// 添加“添加文件”的按钮，
-  //uploader.addButton({
-  //  id: '#filePicker2',
-  //  label: '继续添加'
-  //});
-
-  // 当有文件添加进来时执行，负责view的创建
+    // 当有文件添加进来时执行，负责view的创建
   function addFile( file ) {
     var $li = $( '<li id="' + file.id + '">' +
         '<p class="title">' + file.name + '</p>' +
@@ -206,22 +201,22 @@ jQuery(function() {
         });
       } else {
         $wrap.css( 'filter', 'progid:DXImageTransform.Microsoft.BasicImage(rotation='+ (~~((file.rotation/90)%4 + 4)%4) +')');
-        // use jquery animate to rotation
-        // $({
-        //     rotation: rotation
-        // }).animate({
-        //     rotation: file.rotation
-        // }, {
-        //     easing: 'linear',
-        //     step: function( now ) {
-        //         now = now * Math.PI / 180;
+         //use jquery animate to rotation
+         $({
+             rotation: rotation
+         }).animate({
+             rotation: file.rotation
+         }, {
+             easing: 'linear',
+             step: function( now ) {
+                 now = now * Math.PI / 180;
 
-        //         var cos = Math.cos( now ),
-        //             sin = Math.sin( now );
+                 var cos = Math.cos( now ),
+                     sin = Math.sin( now );
 
-        //         $wrap.css( 'filter', "progid:DXImageTransform.Microsoft.Matrix(M11=" + cos + ",M12=" + (-sin) + ",M21=" + sin + ",M22=" + cos + ",SizingMethod='auto expand')");
-        //     }
-        // });
+                 $wrap.css( 'filter', "progid:DXImageTransform.Microsoft.Matrix(M11=" + cos + ",M12=" + (-sin) + ",M21=" + sin + ",M22=" + cos + ",SizingMethod='auto expand')");
+             }
+         });
       }
 
 
@@ -337,7 +332,7 @@ jQuery(function() {
       case 'finish':
         stats = uploader.getStats();
         if ( stats.successNum ) {
-          alert( '上传成功' );
+          //alert( '上传成功' );
         } else {
           // 没有成功的图片，重设
           state = 'done';
